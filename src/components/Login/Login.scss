@@ -1,0 +1,122 @@
+.MainContainer {
+    background-image: url("../../Assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    .ContainerLogin {
+        width: 70%;
+        height: 88vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 2%;
+        margin-top: 2%;
+        background-color: #6c168ae3;
+        .col-sm-6{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            border-right: 1px solid;
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                img {
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+            p {
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .LoginTitle {
+                font-size: 35px;
+            }
+            .InputLogin {
+                border-radius: 10px;
+                padding: 5px;
+            }
+            .LinkPassword {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .BtnLogin {
+                border-radius: 11px;
+                padding: 5px 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    .MainContainer {
+        .ContainerLogin {
+            height: 80vh;
+            margin-top: 14%;
+            .LoginMain{
+                display: none;
+            }
+            .col-sm-6 {
+                width: 100%;
+                .LoginTitle {
+                    color: white;
+                    font-size: 30px;
+                }
+                .UserLabel {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) {
+    .MainContainer {
+        .ContainerLogin {
+            .col-sm-6{
+                .logo {
+                    img {
+                        width: 80%;
+                    }
+                }
+                p {
+                    font-size: 30px;
+                    color: white;
+                }
+                .LoginTitle {
+                    font-size: 50px;
+                    color: white;
+                }
+                .UserLabel {
+                    color: white;
+                    font-size: 23px;
+                }
+                .InputLogin {
+                    padding: 10px;
+                }
+                .LinkPassword {
+                    font-size: 25px;
+                    color: wheat;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                }
+                .BtnLogin {
+                    padding: 22px 35px;
+                    font-size: 27px;
+                }
+            }
+        }
+    }
+}

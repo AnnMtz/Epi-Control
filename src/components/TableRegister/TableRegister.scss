@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    .ContainerImageReturn {
+        display: flex;
+        align-items: center;
+        width: 15%;
+        justify-content: center;
+        .ReturnImg {
+            width: 30px;
+            height: 30px;
+            margin-top: 1%;
+        }
+    }
+
+    .ContactsInformationTitle {
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ContainerImageAvatar {
+        display: flex;
+        align-items: center;
+        .Avatar {
+            width: 40px;
+            height: 40px;
+            margin-right: 19px;
+        }
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+    .TableInformationInfoContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #b007eab3;
+        height: 100vh;
+        .TableInformationText {
+            color: white;
+        }
+        .ViewGraphic {
+            display: flex;
+            justify-content: space-between;
+            .AddBtn {
+                width: 25px;
+                margin-left: 20%;
+            }
+        }
+
+        
+           
+    }

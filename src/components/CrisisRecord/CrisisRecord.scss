@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+    .ContainerImageReturn {
+        display: flex;
+        align-items: center;
+        width: 15%;
+        justify-content: center;
+        .ReturnImg {
+            width: 30px;
+            height: 30px;
+            margin-top: 1%;
+        }
+    }
+
+    .ContactsInformationTitle {
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ContainerImageAvatar {
+        display: flex;
+        align-items: center;
+        .Avatar {
+            width: 40px;
+            height: 40px;
+            margin-right: 19px;
+        }
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+.CrisisRecordInformationInfoContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b007eab3;
+    height: 100vh;
+    padding-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    .CrisisRecordInformationText {
+        color: white;
+        .InfoContainer {
+            padding-top: 3%;
+            .ContactInfoInput {
+                margin-top: 0%;
+            }
+            .text {
+                    margin-right: 5px;
+            }
+            .ContactInfoInput {
+                border: none;
+                background: none;
+                border-bottom: 1px solid black;
+                border-radius: 10%; 
+            }
+        }
+    }
+            .AddButton {
+                display: inline-block;
+                margin-top: 10%;
+                .AddBtn {
+                    width: 25px;
+                }
+            }
+            .ButtonHomeContainer {
+                display: inline-block;
+                margin-top: 10%;
+                .ButtonPersonalInformation {
+                    margin-left: 100%;
+                }
+            }
+}

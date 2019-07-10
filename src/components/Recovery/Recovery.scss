@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    .ContainerImageRetrun {
+        display: flex;
+        align-items: center;
+        width: 15%;
+        justify-content: center;
+        .ReturnImg {
+            width: 30px;
+            height: 30px;
+            margin-top: 1%;
+        }
+    }
+
+    .RecoveryTitle {
+        width: 50%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ContainerImageLogo {
+        display: flex;
+        align-items: center;
+        .Logo {
+            width: 100px;
+            height: 40px;
+            margin-right: 19px;
+        }
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+    .RecoverInfoContainer{
+        width: 100%;
+        height: 80vh;
+        background-color: brown;
+        .Recovery {
+            text-align: center;
+            padding-top: 5%;
+            color: #fff;
+            margin-top: 0;
+        }
+        .FormRecovery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .InfoContainer {
+                margin-top: 2%;
+            }
+            .ButtonRecovery {
+                padding: 2px 15px;
+                margin-top: 13px;
+                border-radius: 11px;
+                font-size: 19px;
+                box-shadow: 1px 0px 0px grey;
+            }
+        }
+    }
