@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '../../Assets/icons/avatar.png';
 import Return from '../../Assets/img/return.png';
-import Add from '../../Assets/icons/add.png';
+import Add from '../../Assets/icons/add1.png';
 import './PersonalInformation.scss';
 
 const PersonalInformation = () => (
@@ -21,8 +21,8 @@ const PersonalInformation = () => (
                 <h5 className="PersonalInformationSubtext">Complementa tu información personal para tener todos tus datos completos.</h5>
                 <form className="FormPersonalInformation">
                     <div className="InfoContainer">
-                        <label className="text">Fecha de <br/>nacimiento</label>
-                            <input className="PersonalInfoInput" placeholder="Ingresa tu fecha de nacimiento"></input>
+                        <label className="text">Fecha de nacimiento</label>
+                        <input className="PersonalInfoInput" placeholder="Ingresa tu fecha de nacimiento"></input>
                     </div>
                     <div className="InfoContainer">
                         <label className="text">Edad</label>
@@ -39,7 +39,7 @@ const PersonalInformation = () => (
                     <div className="EmergencyContacts">
                         <h3 className="EmergencyContactsText">Aquí puedes agregar los contactos de emergencia, editar y/o eliminarlos.</h3>
                         <div className="AddImage">
-                            <img src={Add}></img>
+                            <img className="AddImg" src={Add}></img>
                         </div>
                     </div>
                     <div className="ButtonHomeContainer">

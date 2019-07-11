@@ -24,11 +24,11 @@ const EmergencyContacts = () => (
                 <form className="FormContactsInformation">
                     <div className="InfoContainer">
                         <label className="text">Nombre</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa el nombre"></input>
-                            <div className="ContainerIcons">
-                                <img className="Icons" src={Delete} alt='delete'/>
-                                <img className="Icons" src={Edit} alt='edit'/>
-                            </div>
+                        <input className="ContactInfoInput" placeholder="Ingresa el nombre"></input>
+                        <div className="ContainerIcons">
+                            <img className="Icons" src={Delete} alt='delete'/>
+                            <img className="Icons" src={Edit} alt='edit'/>
+                        </div>
                     </div>
                     <div className="InfoContainer">
                         <label className="text">Apellidos</label>

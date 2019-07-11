@@ -29,14 +29,10 @@ header {
     }
 }
 
-hr {
-    margin: 0;
-}
-
     .RegisterInfoContainer{
         width: 100%;
         height: 80vh;
-        background-color: brown;
+        background-color: #770b9c87;
         .FormRegister {
             display: flex;
             justify-content: center;
@@ -53,4 +49,146 @@ hr {
                 box-shadow: 1px 0px 0px grey;
             }
         }
+    }
+
+    @media(max-width:576px) {
+        header {
+            .ContainerImageRetrun {
+                .ReturnImg {
+                }
+            }
+        
+            .RegisterTitle {
+            }
+        
+            .ContainerImageLogo {
+                .Logo {
+                }
+            }
+        }
+        
+            .RegisterInfoContainer{
+                height: 86vh;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                p {
+                    color: white;
+                    margin-bottom: 9px;
+                    margin-top: 0%;
+                    font-size: 20px;
+                }
+                .FormRegister {
+                    .InfoContainer {
+                        .User {
+                            color: white;
+                        }
+                        .UserInput {
+                            border-radius: 10px;
+                        }
+                    }
+                    .ButtonRegister {
+                        border-radius: 13px;
+                        margin-top: 21px;
+                    }
+                }
+            }
+    }
+
+    @media(min-width:768px) {
+        header {
+            justify-content: space-around;
+            .ContainerImageRetrun {
+                .ReturnImg {
+                    height: 50px;
+                }
+            }
+        
+            .RegisterTitle {
+            }
+        
+            .ContainerImageLogo {
+                .Logo {
+                }
+            }
+        }
+        
+            .RegisterInfoContainer{
+                height: 93vh;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                p {
+                    color: white;
+                    font-size: 35px;
+                    margin-bottom: 10%;
+                    margin-top: 0;
+                }
+                .FormRegister {
+                    .InfoContainer {
+                        .User {
+                            color: white;
+                            font-size: 23px;
+                        }
+                        .UserInput {
+                            padding: 6%;
+                            border-radius: 18%;
+                            margin-top: 7px;
+                        }
+                    }
+                    .ButtonRegister {
+                        border-radius: 14px;
+                        margin-top: 27px;
+                        padding: 24px 36px;
+                        font-size: 28px;
+                    }
+                }
+            }
+    }
+
+    @media(min-width:1200px) {
+        header {
+            .ContainerImageRetrun {
+                .ReturnImg {
+                    height: 56px;
+                    width: 45px;
+                }
+            }
+        
+            .RegisterTitle {
+                width: 50%;
+                font-size: 46px;
+            }
+        
+            .ContainerImageLogo {
+                .Logo {
+                    height: 75px;
+                }
+            }
+        }
+        
+            .RegisterInfoContainer{
+                p {
+                    font-size: 50px;
+                    margin-bottom: 5%;
+                }
+                .FormRegister {
+                    .InfoContainer {
+                        .User {
+                            font-size: 30px;
+                        }
+                        .UserInput {
+                            padding: 20px 100px;
+                            border-radius: 24%;
+                        }
+                    }
+                    .ButtonRegister {
+                        padding: 18px 36px;
+                        font-size: 35px;
+                    }
+                }
+            }
+
     }

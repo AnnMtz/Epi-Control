@@ -55,6 +55,7 @@
             .BtnLogin {
                 border-radius: 11px;
                 padding: 5px 20px;
+                font-weight: bold;
             }
         }
     }
@@ -76,6 +77,46 @@
                 }
                 .UserLabel {
                     color: white;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .MainContainer {
+        .ContainerLogin {
+            height: 76vh;
+            margin-top: 15%;
+            .col-sm-6{
+                .logo {
+                    img {
+                        width: 65%;
+                    }
+                }
+                p {
+                    font-size: 22px;
+                    color: white;
+                }
+                .LoginTitle {
+                    font-size: 35px;
+                    color: white;
+                }
+                .UserLabel {
+                    font-size: 18px;
+                    color: white;
+                    margin-bottom: 2px;
+                }
+                .InputLogin {
+                }
+                .LinkPassword {
+                    color: wheat;
+                }
+                .BtnLogin {
+                    padding: 18px 20px;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 21px;
                 }
             }
         }
@@ -115,6 +156,7 @@
                 .BtnLogin {
                     padding: 22px 35px;
                     font-size: 27px;
+                    font-weight: bold;
                 }
             }
         }

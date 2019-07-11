@@ -15,7 +15,6 @@ const Home = () => (
                     <img className="Menu" src={Menu} alt='menu'/>
                 </div>
             </header>
-            <hr/>
             <div className="HomeInfoContainer">
                 <div className="AlertButton">
                     <button type="submit" className="Alert">Alerta</button>
