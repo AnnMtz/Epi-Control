@@ -17,7 +17,7 @@ header {
     }
 
     .ContactsInformationTitle {
-        width: 50%;
+        font-size: 25px;
         text-align: center;
         font-size: 30px;
     }
@@ -44,9 +44,6 @@ header {
             padding-right: 10px;
         }
         .ContactInfoInput {
-            // border: none;
-            // background: none;
-            // border-bottom: 1px solid black;
             border-radius: 10px;
         }
         .ContainerIcons {
@@ -73,153 +70,36 @@ header {
         }
     }
 
-    @media(max-width:560px) {
-        header {
-            .ContainerImageReturn {
-                .ReturnImg {
-                }
-            }
-        
-            .ContactsInformationTitle {
-        
-            .ContainerImageAvatar {
-                .Avatar {
-                }
-            }
-        }
-    }
-        .ContacsInformationInfoContainer {
-            .ContactsInformationText {
-                color: white;
-                font-size: 23px;
-                margin-top: 0;
-                margin-bottom: 10%;
-            }
-            .FormContactsInformation {
-                .InfoContainer {
-                    .text {
-                        color: white;
-                        font-size: 32px;
-                        display: block;
-                        margin-bottom: 7px;
-                    }
-                    .ContactInfoInput {
-                        display: inline-block;
-                        padding: 8px 62px;
-                        margin-right: 8px;
-                        margin-bottom: 20px;
-                    }
-                    .ContainerIcons {
-                        display: inline;
-                        margin-top: 12px;
-                        .Icons {
-                            width: 28px;
-                            height: 24px;
-                        }
-                    }
-                }
-                .ButtonHomeContainer {
-                    .ButtonPersonalInformation {
-                        padding: 5px 21px;
-                        margin-top: 34px;
-                        font-size: 22px;
-                    }
-                }
-            }
-        } 
-    }
-
-    @media(min-width:768px) {
-        header {
-            .ContainerImageReturn {
-                .ReturnImg {
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-        
-            .ContactsInformationTitle {
-                font-size: 50px;
-            }
-        
-            .ContainerImageAvatar {
-                .Avatar {
-                    width: 60px;
-                    height: 60px;
-                }
-            }
-        }
-    }
-        .ContacsInformationInfoContainer {
-            .ContactsInformationText {
-                margin-top: 0;
-                margin-bottom: 8%;
-                font-size: 38px;
-                color: white;
-            }
-            .FormContactsInformation {
-                .InfoContainer {
-                    .text {
-                        color: white;
-                        font-size: 25px;
-                    }
-                    .ContactInfoInput {
-                        font-size: 20px;
-                    }
-                }
-                .ButtonHomeContainer {
-                    .ButtonPersonalInformation {
-                        padding: 8px 24px;
-                        margin-top: 50px;
-                        font-size: 28px;
-                    }
-                }
-            }
-        }
-
-        @media(min-width:1200px) {
-            header {
-                .ContainerImageReturn {
-                    width: 10%;
-                    .ReturnImg {
-                        width: 50px;
-                        height: 57px;                   
-                    }
-                }
-            
-                .ContactsInformationTitle {
-                    font-size: 46px;
-                }
-            
-                .ContainerImageAvatar {
-                    .Avatar {
-                        width: 70px;
-                        height: 70px;
-                    }
-                }
-            }
-            .ContacsInformationInfoContainer {
-                height: 100%;
-                .ContactsInformationText {
-                    font-size: 45px;
-                }
-                .FormContactsInformation {
-                    .InfoContainer {
-                        .text {
-                            font-size: 35px;
-                        }
-                        .ContactInfoInput {
-                    }
-                    .ButtonHomeContainer {
-                        .ButtonPersonalInformation {
-                            font-size: 45px;
-                            padding: 18px 37px;
-                        }
-                    }
-                }
-        }
-    }
-}
+// @media(max-width:576px) {
+//     header {
+//         .ContainerImageReturn {
+//             .ReturnImg {
+//             }
+//         }
+    
+//         .ContactsInformationTitle {
+//         }
+    
+//         .ContainerImageAvatar {
+//             .Avatar {
+//             }
+//         }
+//     }
+    
+//         .ContacsInformationInfoContainer{
+//             .text {
+//             }
+//             .ContactInfoInput {
+//             }
+//             .ContainerIcons {
+//                 .Icons {
+//                 }
+//             }
+//             .ButtonHomeContainer {
+//                 .ButtonPersonalInformation {
+//             }
+//         }
+// }
     
 
 
