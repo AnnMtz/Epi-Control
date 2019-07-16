@@ -1,38 +1,40 @@
 import React from 'react';
-import Avatar from '../../Assets/icons/avatar.png';
-import Return from '../../Assets/img/return.png';
 import './ScheduleAppointment.scss';
 
 const ScheduleAppointment = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-            <header>
-                <div className="ContainerImageReturn">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="ContactsInformationTitle">EPI-CONTROL</h1>
-                <div className="ContainerImageAvatar">
-                    <img className="Avatar" src={Avatar} alt='avatar'/>
+        <header>
+            <nav className="Menu">
+                <div class="Logo">
+                        <h1>Lepsi</h1>
+                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
                 </div>
+                <div className="Enlaces" id="enlaces">
+                    <a href="#">Información personal</a>
+                    <a href="#">Registro médico</a>
+                    <a href="#">Historial de crisis</a>
+                </div>
+            </nav>
             </header>
-            <div className="ContacsInformationInfoContainer">
-                <h3 className="ContactsInformationText">AGENDA TUS CITAS MÉDICAS</h3>
-                <form className="FormContactsInformation">
-                    <div className="InfoContainer">
-                        <label className="text">Fecha:</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa la fecha de tu cita"></input>
+            <div className="PersonalInformationInfoContainer">
+                <div className="Title">
+                    <h1 className="PersonalInformationText">Agenda tus citas médicas</h1>
+                </div>
+                <div className="Form">
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Fecha</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Hora:</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa la hora"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Hora</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="ButtonHomeContainer">
-                        <button className="ButtonPersonalInformation">Guardar</button>
-                    </div> 
-                </form>
+                </div>
+                <button className="BtnPersonalInfo" type="button">Guardar</button>
+                </div>
             </div>
         </div>
-    </div>
 )
 
 export default ScheduleAppointment;

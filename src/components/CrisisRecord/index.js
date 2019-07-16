@@ -2,47 +2,50 @@ import React from 'react';
 import Avatar from '../../Assets/icons/avatar.png';
 import Return from '../../Assets/img/return.png';
 import Add from '../../Assets/icons/add1.png';
+// import '../ScheduleAppointment.scss'
 import './CrisisRecord.scss';
 
 const CrisisRecord = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-            <header>
-                <div className="ContainerImageReturn">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="ContactsInformationTitle">EPI-CONTROL</h1>
-                <div className="ContainerImageAvatar">
-                    <img className="Avatar" src={Avatar} alt='avatar'/>
+        <header>
+            <nav className="Menu">
+                <div class="Logo">
+                        <h1>Lepsi</h1>
+                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
                 </div>
+                <div className="Enlaces" id="enlaces">
+                    <a href="#">Información personal</a>
+                    <a href="#">Registro médico</a>
+                    <a href="#">Historial de crisis</a>
+                </div>
+            </nav>
             </header>
-            <div className="CrisisRecordInformationInfoContainer">
-                <h5 className="CrisisRecordInformationText">Registra tus crisis aquí, lleva un control de las mismas</h5>
-                <form className="FormCrisisRecordInformation">
-                    <div className="InfoContainer">
-                        <label className="text">Día:<br/></label>
-                            <input className="ContactInfoInput" placeholder="Ingresa el día"></input>
+            <div className="PersonalInformationInfoContainer">
+                <div className="Title">
+                    <h1 className="PersonalInformationText">Registra tus crisis aquí, lleva un control de
+                    las mismas</h1>
+                </div>
+                <div className="Form">
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Día</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Hora:<br/></label>
-                            <input className="ContactInfoInput" placeholder="Ingresa la hora"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Hora</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Duración:<br/></label>
-                            <input className="ContactInfoInput" placeholder="Ingresa la duración aproximada"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Duración</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Tipo:<br/></label>
-                            <input className="ContactInfoInput" placeholder="Ingresa el tipo"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Tipo</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="AddButton">
-                        <img className="AddBtn" src={Add} alt="agregar"/>
-                    </div>
-                    <div className="ButtonHomeContainer">
-                        <button className="ButtonPersonalInformation">Guardar</button>
-                    </div> 
-                </form>
-            </div>
+                </div>
+                <button className="BtnPersonalInfo" type="button">Guardar</button>
+                </div>
         </div>
     </div>
 )

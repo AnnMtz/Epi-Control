@@ -1,63 +1,59 @@
 import React from 'react';
-import Avatar from '../../Assets/icons/avatar.png';
-import Return from '../../Assets/img/return.png';
 import Add from '../../Assets/icons/add.png';
 import Delete from '../../Assets/icons/delete.png';
 import Edit from '../../Assets/icons/edit.png';
+// import '../PersonalInformation/PersonalInformation.scss'
 import './EmergencyContacts.scss';
 
 const EmergencyContacts = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-            <header>
-                <div className="ContainerImageReturn">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="ContactsInformationTitle">EPI-CONTROL</h1>
-                <div className="ContainerImageAvatar">
-                    <img className="Avatar" src={Avatar} alt='avatar'/>
+        <header>
+            <nav className="Menu">
+                <div class="Logo">
+                        <h1>Lepsi</h1>
+                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
                 </div>
+                <div className="Enlaces" id="enlaces">
+                    <a href="#">Información personal</a>
+                    <a href="#">Registro médico</a>
+                    <a href="#">Historial de crisis</a>
+                </div>
+            </nav>
             </header>
-            <div className="ContacsInformationInfoContainer">
-                <h3 className="ContactsInformationText">CONTACTOS DE EMERGENCIA</h3>
-                {/* <h5 className="PersonalInformationSubtext">Complementa tu información personal para tener todos tus datos completos.</h5> */}
-                <form className="FormContactsInformation">
-                    <div className="InfoContainer">
-                        <label className="text">Nombre</label>
-                        <input className="ContactInfoInput" placeholder="Ingresa el nombre"></input>
-                        <div className="ContainerIcons">
-                            <img className="Icons" src={Delete} alt='delete'/>
-                            <img className="Icons" src={Edit} alt='edit'/>
-                        </div>
+            <div className="PersonalInformationInfoContainer">
+                <div className="Title">
+                    <h1 className="PersonalInformationText">Agregar un contacto de emergencia</h1>
+                    <img src={Edit} alt="editar"/>
+                </div>
+                <div className="Form">
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Nombre</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Apellidos</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa sus apellidos"></input>
-                            <div className="ContainerIcons">
-                                <img className="Icons" src={Delete} alt='delete'/>
-                                <img className="Icons" src={Edit} alt='edit'/>
-                            </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Apellidos</label>
+                        <input className="InputLogin" type="text" id="user"/> Años
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Parentesco</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa el perentesco"></input>
-                            <div className="ContainerIcons">
-                                <img className="Icons" src={Delete} alt='delete'/>
-                                <img className="Icons" src={Edit} alt='edit'/>
-                            </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Parentesco</label>
+                        <input className="InputLogin" type="text" id="user"/> Años
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Teléfono</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa el número telefónico"></input>
-                            <div className="ContainerIcons">
-                                <img className="Icons" src={Delete} alt='delete'/>
-                                <img className="Icons" src={Edit} alt='edit'/>
-                            </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Teléfono</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="ButtonHomeContainer">
-                        <button className="ButtonPersonalInformation">Guardar</button>
-                    </div> 
-                </form>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Celular</label>
+                        <input className="InputLogin" type="text" id="user"/>
+                    </div>
+                    <div className="Form-control-address">
+                        <label className="UserLabel" htmlFor="user">Dirección</label>
+                        <input className="InputAddress" type="text" id="user"/>
+                    </div>
+                </div>
+
+                <button className="BtnPersonalInfo" type="button">Guardar</button>
             </div>
         </div>
     </div>

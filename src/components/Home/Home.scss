@@ -1,42 +1,50 @@
 header {
     display: flex;
+    background-color: #6A1B9A;
+    width: 100%;
+    top: 0;
     justify-content: space-evenly;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    .ContainerImageAvatar {
+    .Menu {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        width: 15%;
-        justify-content: center;
-        .AvatarImg {
-            width: 30px;
-            height: 30px;
-            margin-top: 1%;
+    }
+    .Logo {
+        display: inline-block;
+        margin-right: 1em;
+        color: white;
+        h1 {
+            font-family: 'Tangerine';
+            font-size: 55px;
+        }
+        .Btn-menu {
+            display: none;
         }
     }
-
-    .HomeTitle {
-        width: 50%;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .ContainerImageMenu {
-        display: flex;
-        align-items: center;
-        .Menu {
-            width: 40px;
-            height: 40px;
-            margin-right: 19px;
+    .Enlaces {
+        display: inline-block;
+        text-align: right;
+        a {
+            color: white;
+            margin-right: 5%;
+            text-decoration: none;
+        }
+        a:hover {
+            background: #f2f2f2;
+            color: #4357ad;
         }
     }
 }
-
     .HomeInfoContainer{
         width: 100%;
         height: 80vh;
-        background-color: #b816f18f;
         .Home {
             text-align: center;
             padding-top: 5%;
@@ -49,44 +57,64 @@ header {
             align-items: center;
             .Alert {
                 margin-top: 50%;
-                height: 150px;
-                width: 150px;
+                height: 340px;
+                width: 340px;
                 font-size: 36px;
                 border-radius: 50%;
+                background-color: #FF4081;
+                color: white;
+                font-family: Roboto;
+                border: none;
+                -webkit-box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
+                -moz-box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
+                box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
             }
         }
     }
 
     @media(max-width:576px) {
         header {
-            .ContainerImageAvatar {
-                .AvatarImg {
+            .Menu {
+                flex-direction: column;
+            }
+            .Logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding: 1em;
+                h1 {
+                    font-size: 40px;
+                }
+                .Btn-menu {
+                    display: inline-block;
+                    color: white;
                 }
             }
-        
-            .HomeTitle {
-            }
-        
-            .ContainerImageMenu {
-                .Menu {
+            .Enlaces {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                a {
+                    // display: none
                 }
             }
         }
-        
             .HomeInfoContainer{
-                height: 90vh;
                 .Home {
                 }
                 .AlertButton {
                     .Alert {
-                        margin-top: 91%;
-                        height: 170px;
-                        width: 170px;
+                        margin-top: 63%;
+                        height: 110px;
+                        width: 110px;
+                        font-size: 28px;
                     }
                 }
             }
-    }
-
+        }
     @media(min-width:768px) {
         header {
             justify-content: space-around;
@@ -116,8 +144,8 @@ header {
                 .AlertButton {
                     .Alert {
                         margin-top: 61%;
-                        height: 300px;
-                        width: 300px;
+                        height: 260px;
+                        width: 260px;
                         font-size: 73px;
                     }
                 }
@@ -142,21 +170,37 @@ header {
                 .Menu {
                     width: 90px;
                     height: 90px;
+                    h1 {
+                        font-size: 60px;
+                    }
+                    .Btn-menu {
+                        display: none;
+                    }
+                }
+                .Enlaces {
+                    display: inline-block;
+                    text-align: right;
+                    a {
+                        color: white;
+                        margin-right: 5%;
+                        font-size: 20px;
+                        text-decoration: none;
+                    }
                 }
             }
         }
             .HomeInfoContainer{
                 height: 100%;
+                background-color: none;
                 .Home {
                 }
                 .AlertButton {
                     .Alert {
                         margin-top: 30%;
-                        height: 450px;
-                        width: 450px;
+                        height: 300px;
+                        width: 300px;
                         font-size: 100px;
                     }
                 }
             }
     }
-

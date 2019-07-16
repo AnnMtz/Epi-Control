@@ -1,51 +1,59 @@
 import React from 'react';
-import Avatar from '../../Assets/icons/avatar.png';
-import Return from '../../Assets/img/return.png';
+// import Avatar from '../../Assets/icons/avatar.png';
+// import Return from '../../Assets/img/return.png';
 import Add from '../../Assets/icons/add1.png';
+import Edit from '../../Assets/icons/edit.png'
 import './PersonalInformation.scss';
 
 const PersonalInformation = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerPersonalInformation'>
-            <header>
-                <div className="ContainerImageReturn">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="PersonalInformationTitle">EPI-CONTROL</h1>
-                <div className="ContainerImageAvatar">
-                    <img className="Avatar" src={Avatar} alt='avatar'/>
+        <header>
+            <nav className="Menu">
+                <div class="Logo">
+                        <h1>Lepsi</h1>
+                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
                 </div>
+                <div className="Enlaces" id="enlaces">
+                    <a href="#">Información personal</a>
+                    <a href="#">Registro médico</a>
+                    <a href="#">Historial de crisis</a>
+                </div>
+            </nav>
             </header>
             <div className="PersonalInformationInfoContainer">
-                <h3 className="PersonalInformationText">Información personal</h3>
-                <h5 className="PersonalInformationSubtext">Complementa tu información personal para tener todos tus datos completos.</h5>
-                <form className="FormPersonalInformation">
-                    <div className="InfoContainer">
-                        <label className="text">Fecha de nacimiento</label>
-                        <input className="PersonalInfoInput" placeholder="Ingresa tu fecha de nacimiento"></input>
+                <div className="Title">
+                    <h1 className="PersonalInformationText">Información personal</h1>
+                    <img src={Edit} alt="editar"/>
+                </div>
+                <h5 className="Subtext">Complementa tu información personal  para tener todos tus datos.</h5>
+                <div className="Form">
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Fecha de <br/>nacimiento</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Edad</label>
-                            <input className="PersonalInfoInput" placeholder="Ingresa tu edad"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Edad</label>
+                        <input className="InputLogin" type="text" id="user"/> Años
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Dirección</label>
-                            <input className="PersonalInfoInput"></input>
+                    <div className="Form-control-address">
+                        <label className="UserLabel" htmlFor="user">Dirección</label>
+                        <input className="InputAddress" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Teléfono</label>
-                            <input className="PersonalInfoInput" placeholder="Ingresa tu teléfono"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Teléfono</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="EmergencyContacts">
-                        <h3 className="EmergencyContactsText">Aquí puedes agregar los contactos de emergencia, editar y/o eliminarlos.</h3>
-                        <div className="AddImage">
-                            <img className="AddImg" src={Add}></img>
-                        </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Celular</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="ButtonHomeContainer">
-                        <button className="ButtonPersonalInformation">Enviar</button>
-                    </div> 
-                </form>
+                </div>
+                <h3 className="EmergencyText">Contactos de emergencia</h3>
+                <h5 className="EmergencySubtext">Aquí puedes agregar tus contactos de emergencia, editar y/o eliminarlos como tu prefieras.</h5>
+                <a href="#"><img src={Add} className="Addimage" alt="agregar"/></a>
+
+                <button className="BtnPersonalInfo" type="button">Enviar</button>
             </div>
         </div>
     </div>

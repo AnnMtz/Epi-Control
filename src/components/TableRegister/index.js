@@ -7,14 +7,18 @@ import './TableRegister.scss';
 const TableRegister = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-            <header>
-                <div className="ContainerImageReturn">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="ContactsInformationTitle">EPI-CONTROL</h1>
-                <div className="ContainerImageAvatar">
-                    <img className="Avatar" src={Avatar} alt='avatar'/>
+        <header>
+            <nav className="Menu">
+                <div class="Logo">
+                        <h1>Lepsi</h1>
+                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
                 </div>
+                <div className="Enlaces" id="enlaces">
+                    <a href="#">Información personal</a>
+                    <a href="#">Registro médico</a>
+                    <a href="#">Historial de crisis</a>
+                </div>
+            </nav>
             </header>
             <div className="TableInformationInfoContainer">
                 <h3 className="TableInformationText">TABLA DE REGISTRO DE CRISIS</h3>

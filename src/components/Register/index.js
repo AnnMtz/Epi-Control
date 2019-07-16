@@ -1,45 +1,30 @@
 import React from 'react';
 import Logo from '../../Assets/img/logo.png';
 import Return from '../../Assets/img/return.png';
-import './Register.scss';
+import '../Login/Login.scss'
+// import './Register.scss';
 
 const Register = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerRegister'>
-            <header>
-                <div className="ContainerImageRetrun">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="RegisterTitle">Registro</h1>
-                <div className="ContainerImageLogo">
-                    <img className="Logo" src={Logo} alt='logo'/>
+        <div className ="ContainerLogin">
+                <div className="LoginMain">
+                <h1 className="LoginTitle">Lepsi</h1>
+                    <h3 className="LoginSubtitle">¿Sabías que?</h3>
+                    <p className="LoginParagraph">Tener convulsiones en momentos determinados puede llevar a circunstancias peligrosas para ti o para otras personas.</p>
                 </div>
-            </header>
-            <div className="RegisterInfoContainer">
-                <p>Ingresa tu nombre de usuario y contraseña</p>
-                <form className="FormRegister">
-                    <div className="InfoContainer">
-                        <label className="User">Nombre <br/></label>
-                            <input className="UserInput" placeholder="Escribe tu nombre"></input>
-                    </div>
-                    <div className="InfoContainer">
-                        <label className="User">Apellidos <br/></label>
-                            <input className="UserInput" placeholder="Escribe tus apellidos"></input>
-                    </div>
-                    <div className="InfoContainer">
-                        <label className="User">Contraseña <br/></label>
-                            <input className="UserInput" placeholder="Escribe tu contraseña"></input>
-                    </div>
-                    <div className="InfoContainer">
-                        <label className="User">Confirma tu contraseña <br/></label>
-                            <input className="UserInput" placeholder="Confirma tu contraseña"></input>
-                    </div>
-                    <div className="ButtonRegisterContainer">
-                        <button className="ButtonRegister">Iniciar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+                <div className="col-sm-6">
+                    <h1 className="WelcomeTitle">Registrate</h1>
+                    <label className="UserLabel" htmlFor="name">Nombre</label>
+                    <input className="InputLogin" type="text" id="name"/>
+                    <label className="UserLabel" htmlFor="lastname">Apellidos</label>
+                    <input className="InputLogin" type="password" id="lastname"/>
+                    <label className="UserLabel" htmlFor="password">Contraseña</label>
+                    <input className="InputLogin" type="password" id="password"/>
+                    <label className="UserLabel" htmlFor="password2">Confirma tu contraseña</label>
+                    <input className="InputLogin" type="password" id="password"/>
+                    <button className="BtnLogin" type="button">Enviar</button>
+                </div>
+    </div>
     </div>
 )
 

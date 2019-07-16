@@ -4,31 +4,23 @@ import './Newpassword.scss';
 
 const Newpassword = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerNewpassword'>
-            <header>
-                <div className="ContainerImageRetrun">
-                </div> 
-                <h1 className="NewpasswordTitle">RECUPERAR CONTRASEÑA</h1>
-                <div className="ContainerImageLogo">
-                    <img className="Logo" src={Logo} alt='logo'/>
+        <div className ="ContainerLogin">
+                <div className="LoginMain">
+                <h1 className="LoginTitle">Lepsi</h1>
+                    <h3 className="LoginSubtitle">¿Sabías que?</h3>
+                    <p className="LoginParagraph">Tener convulsiones en momentos determinados puede llevar a circunstancias peligrosas para ti o para otras personas.</p>
                 </div>
-            </header>
-            <div className="NewpasswordInfoContainer">
-                <h3 className="Newpassword">Ingresa nueva una nueva contraseña.</h3>
-                <form className="FormNewpassword">
-                    <div className="InfoContainer">
-                        <label className="Email">Correo <br/></label>
-                            <input className="EmailInput" placeholder="Ingresa tu correo"></input>
-                    </div>
-                    <div className="InfoContainer">
-                        <label className="Email">Confirma tu correo <br/></label>
-                            <input className="EmailInput" placeholder="Confirma tu correo"></input>
-                    </div>
-                    <div className="ButtonNewpasswordContainer">
-                        <button className="ButtonNewpassword">Enviar</button>
-                    </div>
-                </form>
-            </div>
+                <div className="col-sm-6">
+                    <h1 className="WelcomeTitle">¿No recuerdas tu contraseña?</h1>
+                    <h3 className="WelcomeSubtitle">¡No te preocupes! Nos sucede a todos. Ingresa tu email y te ayudaremos.</h3>
+                    <label className="UserLabel" htmlFor="email">Correo</label>
+                    <input className="InputLogin" type="text" id="email"/>
+                    {/* <label className="UserLabel" htmlFor="password">Contraseña</label>
+                    <input className="InputLogin" type="password" id="password"/> */}
+                    {/* <a className="LinkPassword" href="#">¿Olvidaste tu contraseña?</a>
+                    <a className="LinkRegister" href="">Registrate</a> */}
+                    <button className="BtnLogin" type="button">Solicitar</button>
+                </div>
         </div>
     </div>
 )

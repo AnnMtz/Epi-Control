@@ -1,286 +1,208 @@
 header {
     display: flex;
+    background-color: #6A1B9A;
+    width: 100%;
+    top: 0;
     justify-content: space-evenly;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    .ContainerImageReturn {
+    .Menu {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        width: 15%;
-        justify-content: center;
-        .ReturnImg {
-            width: 30px;
-            height: 30px;
-            margin-top: 1%;
+    }
+    .Logo {
+        display: inline-block;
+        margin-right: 1em;
+        color: white;
+        h1 {
+            font-family: 'Tangerine';
+            font-size: 55px;
+        }
+        .Btn-menu {
+            display: none;
         }
     }
-
-    .PersonalInformationTitle {
-        width: 50%;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .ContainerImageAvatar {
-        display: flex;
-        align-items: center;
-        .Avatar {
-            width: 40px;
-            height: 40px;
-            margin-right: 19px;
+    .Enlaces {
+        display: inline-block;
+        text-align: right;
+        a {
+            color: white;
+            margin-right: 5%;
+            text-decoration: none;
+        }
+        a:hover {
+            background: #f2f2f2;
+            color: #4357ad;
         }
     }
 }
 
     .PersonalInformationInfoContainer{
         display: flex;
-        align-items: center;
+        justify-content: left;
         flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        padding: 5px;
-        background-color: #b816f18f;
-        .PersonalInformationText {
-            text-align: center;
-            padding-top: 5%;
-            color: #fff;
-            margin-top: 0;
-        }
-        .PersonalInformationSubtext {
-            text-align: center;
-            color: gray;
-        }
-        .FormPersonalInformation {
+        .Title {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            margin-top: 3%;
+            .PersonalInformationText {
+                margin-left: 15px;
+                color: #BFBDBD;
+                font-size: 40px;
+            }
+            img {
+                margin-right: 15px;
+                width: 25px;
+                height: 25px;
+                margin-top: 22px;
+            }
+        }
+        .Subtext {
+            margin-left: 15px;
+            font-size: 18px;
+            color: #BFBDBD;
+        }
+        .Form {
+            display: flex;
+            justify-content: left;
             flex-direction: column;
-            .InfoContainer {
-                margin-top: 2%;
-                .text {
-                    padding-right: 10px;
+            margin-left: 15px;
+            .Form-control {
+                font-family: Roboto;
+                color: #B3B0B0;
+                .UserLabel {
+                    font-family: 'Roboto';
+                    font-weight: 32;
+                    color: #B3B0B0;
+                    font-size: 22px;
+                    margin-right: 15px;
                 }
-                .PersonalInfoInput {
-                    border-radius: 10%;
+                .InputLogin {
+                    border: none;
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 30%;
+                    margin-bottom: 2%;
                 }
             }
-            .EmergencyContacts {
+            .Form-control-address {
                 display: flex;
                 flex-direction: column;
-                margin-top: 3%;
-                .EmergencyContactsText {
-                    text-align: center;
-                    color: gray;
-                    font-size: 12px;
-                }
-                .AddImage {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    img {
-                        width: 30px;
-                    }
+                font-family: Roboto;
+                color: #B3B0B0;
+                .InputAddress {
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 90%;
+                    margin-left: 11px;
+                    margin-bottom: 2%;
+                    height: 90px;
                 }
             }
-            .ButtonPersonalInformation {
-                padding: 2px 15px;
-                margin-top: 13px;
-                border-radius: 11px;
-                font-size: 19px;
-                box-shadow: 1px 0px 0px grey;
-            }
+        }
+        .EmergencyText {
+            margin-left: 15px;
+            color: #B3B0B0;
+            margin-bottom: 0;
+            margin-top: 2px;
+            font-size: 22px;
+        }
+        .EmergencySubtext {
+            margin-left: 15px;
+            color: #B3B0B0;
+        }
+        .Addimage {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 2%;
+            margin-left: 90%;
+        }
+        .BtnPersonalInfo {
+            width: 120px;
+            background-color: #FF4081;
+            color: white;
+            font-family: Roboto;
+            font-size: 30px;
+            height: 50px;
+            padding: 2px 15px;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
     @media(max-width:576px) {
         header {
-            .ContainerImageReturn {
-                .ReturnImg {
-                }
+            .Menu {
             }
-        
-            .PersonalInformationTitle {
-            }
-        
-            .ContainerImageAvatar {
-                .Avatar {
-                }
-            }
-        }
-        
-            .PersonalInformationInfoContainer{
-                .PersonalInformationText {
-                    padding-top: 14%;
+            .Logo {
+                h1 {
                     font-size: 30px;
                 }
-                .PersonalInformationSubtext {
-                    color: wheat;
+                .Btn-menu {
+                }
+            }
+            .Enlaces {
+                a {
+                    font-size: 12px;
+                }
+                a:hover {
+                }
+            }
+        }
+        
+            .PersonalInformationInfoContainer{
+                .Title {
+                    .PersonalInformationText {
+                        font-size: 20px;
+                    }
+                    img {
+                        width: 20px;
+                        margin-top: 16px;
+                    }
+                }
+                .Subtext {
+                    font-size: 12px;
+                }
+                .Form {
+                    .UserLabel {
+                        font-size: 12px;
+                    }
+                    .InputLogin {
+                    }
+                    .Form-control-address {
+                        .InputAddress {
+                            margin-left: 6px;
+                            height: 60px;
+                    }
+                }
+            }
+                .EmergencyText {
                     font-size: 16px;
                 }
-                .FormPersonalInformation {
-                    .InfoContainer {
-                        display: flex;
-                        .text {
-                            font-size: 14px;
-                            color: white;
-                            display: block;
-                            width: 100px;
-                        }
-                        .PersonalInfoInput {
-                            padding: 6px 5px;
-                            border-radius: 10px;
-                        }
-                    }
-                    .EmergencyContacts {
-                        .EmergencyContactsText {
-                            color: wheat;
-                            font-size: 16px;
-                        }
-                        .AddImage {
-                            .AddImg {
-                                width: 40px;
-                                margin-right: 20px;
-                                margin-top: 20px;
-                                margin-bottom: 20px;
-                            }
-                        }
-                    }
-                    .ButtonPersonalInformation {
-                        padding: 8px 30px;
-                        font-size: 26px;
-                    }
+                .EmergencySubtext {
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    font-size: 10px;
+                }
+                .Addimage {
+                    width: 15px;
+                    height: 15px;
+                }
+                .BtnPersonalInfo {
+                    width: 100px;
+                    font-size: 20px;
+                    height: 35px;
+                    padding: 1px 10px;
                 }
             }
     }
 
-    @media(min-width:768px) {
-        header {
-            .ContainerImageReturn {
-                .ReturnImg {
-                    width: 42px;
-                    height: 42px;
-                }
-            }
-        
-            .PersonalInformationTitle {
-                font-size: 45px;
-            }
-        
-            .ContainerImageAvatar {
-                .Avatar {
-                    width: 60px;
-                    height: 60px;
-                }
-            }
-        }
-        
-            .PersonalInformationInfoContainer{
-                .PersonalInformationText {
-                    padding-top: 10%;
-                    font-size: 45px;
-                }
-                .PersonalInformationSubtext {
-                    color: wheat;
-                    font-size: 22px;
-                
-                }
-                .FormPersonalInformation {
-                    .InfoContainer {
-                        display: flex;
-                        .text {
-                            font-size: 19px;
-                            color: white;
-                            display: block;
-                            width: 100px;
-                        }
-                        .PersonalInfoInput {
-                            padding: 6px 50px;
-                            border-radius: 10px;
-                            font-size: 16px;
-                        }
-                    }
-                    .EmergencyContacts {
-                        .EmergencyContactsText {
-                            font-size: 20px;
-                            color: wheat;
-                        }
-                        .AddImage {
-                            .AddImg {
-                                width: 50px;
-                                margin-right: 15px;
-                                margin-top: 15px;
-                                margin-bottom: 15px;
-                            }
-                        }
-                    }
-                    .ButtonPersonalInformation {
-                        font-size: 40px;
-                        padding: 14px 40px;
-                    }
-                }
-            }
-    }
-
-    @media(min-width:1200px) {
-        header {
-            .ContainerImageReturn {
-                .ReturnImg {
-                    width: 60px;
-                    height: 60px;
-                }
-            }
-        
-            .PersonalInformationTitle {
-                font-size: 70px;
-            }
-        
-            .ContainerImageAvatar {
-                .Avatar {
-                    width: 80px;
-                    height: 80px;
-                }
-            }
-        }
-        
-            .PersonalInformationInfoContainer{
-                height: 100%;
-                .PersonalInformationText {
-                    font-size: 65px;
-                    padding-top: 6%;
-                }
-                .PersonalInformationSubtext {
-                    font-size: 35px;
-                    margin: 50px;
-                }
-                .FormPersonalInformation {
-                    .InfoContainer {
-                        .text {
-                            font-size: 30px;
-                            width: 150px;
-                        }
-                        .PersonalInfoInput {
-                            padding: 6px 170px;
-                            font-size: 25px;
-                        }
-                    }
-                    .EmergencyContacts {
-                        .EmergencyContactsText {
-                            font-size: 32px;
-                        }
-                        .AddImage {
-                            .AddImg {
-                                width: 65px;
-                            }
-                        }
-                    }
-                    .ButtonPersonalInformation {
-                        font-size: 55px;
-                        padding: 19px 57px;
-                    }
-                }
-            }
-    }
-        
     
 

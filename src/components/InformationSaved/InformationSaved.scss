@@ -1,49 +1,54 @@
 header {
     display: flex;
+    background-color: #6A1B9A;
+    width: 100%;
+    top: 0;
     justify-content: space-evenly;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    .ContainerImageReturn {
+    .Menu {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        width: 15%;
-        justify-content: center;
-        .ReturnImg {
-            width: 30px;
-            height: 30px;
-            margin-top: 1%;
+    }
+    .Logo {
+        display: inline-block;
+        margin-right: 1em;
+        color: white;
+        h1 {
+            font-family: 'Tangerine';
+            font-size: 55px;
+        }
+        .Btn-menu {
+            display: none;
         }
     }
-
-    .ContactsInformationTitle {
-        width: 50%;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .ContainerImageAvatar {
-        display: flex;
-        align-items: center;
-        .Avatar {
-            width: 40px;
-            height: 40px;
-            margin-right: 19px;
+    .Enlaces {
+        display: inline-block;
+        text-align: right;
+        a {
+            color: white;
+            margin-right: 5%;
+            text-decoration: none;
+        }
+        a:hover {
+            background: #f2f2f2;
+            color: #4357ad;
         }
     }
-}
-
-hr {
-    margin: 0;
 }
 
     .ContacsInformationInfoContainer{
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: #b007eab3;
         height: 100vh;
-        padding-top: 19%;
+        padding-top: 2%;
         .EditImg {
             width: 25px;
             margin-left: auto;
@@ -83,25 +88,4 @@ hr {
                 margin-left: 5%;
             }
         }
-        
-        // .ButtonHomeContainer {
-            //     display: flex;
-            //     justify-content: center;
-            //     .ButtonPersonalInformation {
-                //         padding: 2px 15px;
-                //         margin-top: 13px;
-                //         border-radius: 11px;
-                //         font-size: 19px;
-                //         box-shadow: 1px 0px 0px grey;
-                //     }
-                // }
-            }
-    // .AddButton {
-    //     display: flex;
-    //     width: 100%;
-    //     .AddIcons {
-    //         width: 15px;
-    //         margin-top: 10%;
-    //         margin-left: 5%;
-    //     }
-    // }
+    }

@@ -1,52 +1,55 @@
 import React from 'react';
-import Avatar from '../../Assets/icons/avatar.png';
-import Return from '../../Assets/img/return.png';
 import Add from '../../Assets/icons/add1.png';
 import './Medicalrecord.scss';
 
 const MedicalRecord = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-            <header>
-                <div className="ContainerImageReturn">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="ContactsInformationTitle">EPI-CONTROL</h1>
-                <div className="ContainerImageAvatar">
-                    <img className="Avatar" src={Avatar} alt='avatar'/>
+        <header>
+            <nav className="Menu">
+                <div class="Logo">
+                        <h1>Lepsi</h1>
+                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
                 </div>
+                <div className="Enlaces" id="enlaces">
+                    <a href="#">Información personal</a>
+                    <a href="#">Registro médico</a>
+                    <a href="#">Historial de crisis</a>
+                </div>
+            </nav>
             </header>
-            <div className="ContacsInformationInfoContainer">
-                <h3 className="ContactsInformationText">REGISTRO MÉDICO</h3>
-                <form className="FormContactsInformation">
-                    <div className="InfoContainer">
-                        <label className="text">Padecimiento:</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa tu padecimiento"></input>
+            <div className="PersonalInformationInfoContainer">
+                <div className="Title">
+                    <h1 className="PersonalInformationText">Registro Médico</h1>
+                </div>
+                <div className="Form">
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Diagnóstico</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Años de diagnostico:</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa años de diagnostico"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Años de diagnóstico</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <label className="text">Medicamento:</label>
-                            <input className="ContactInfoInput" placeholder="Ingresa tu medicamento"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Medicamento</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainerMedicalRecord">
-                        <label className="textRecords">Dosis:</label>
-                            <input className="ContactInfoInputRecords" placeholder="Dosis"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Dosis</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainerMedicalRecord">
-                        <label className="textRecords">Horario:</label>
-                            <input className="ContactInfoInputRecords" placeholder="Horario"></input>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Horario</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
-                    <div className="InfoContainer">
-                        <span>Agenda tus citas médicas</span>
-                        <img className="AddBtn" src={Add} alt="agregar"/>
-                    </div>
-                    <div className="ButtonHomeContainer">
-                        <button className="ButtonPersonalInformation">Guardar</button>
-                    </div> 
-                </form>
+                </div>
+                <div className="Agenda">
+                    <h3>Agenda tus citas medicas</h3>
+                    <a href=""><img src={Add} alt="agregar"/></a>
+                </div>
+
+                <button className="BtnPersonalInfo" type="button">Guardar</button>
             </div>
         </div>
     </div>

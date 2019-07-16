@@ -1,81 +1,211 @@
 header {
     display: flex;
+    background-color: #6A1B9A;
+    width: 100%;
+    top: 0;
     justify-content: space-evenly;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    .ContainerImageReturn {
+    .Menu {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        width: 15%;
-        justify-content: center;
-        .ReturnImg {
-            width: 30px;
-            height: 30px;
-            margin-top: 1%;
-        }
     }
-
-    .ContactsInformationTitle {
-        width: 50%;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .ContainerImageAvatar {
-        display: flex;
-        align-items: center;
-        .Avatar {
-            width: 40px;
-            height: 40px;
-            margin-right: 19px;
-        }
-    }
-}
-
-hr {
-    margin: 0;
-}
-
-.CrisisRecordInformationInfoContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #b007eab3;
-    height: 100vh;
-    padding-top: 12%;
-    padding-left: 5%;
-    padding-right: 5%;
-    .CrisisRecordInformationText {
+    .Logo {
+        display: inline-block;
+        margin-right: 1em;
         color: white;
-        .InfoContainer {
-            padding-top: 3%;
-            .ContactInfoInput {
-                margin-top: 0%;
-            }
-            .text {
-                    margin-right: 5px;
-            }
-            .ContactInfoInput {
-                border: none;
-                background: none;
-                border-bottom: 1px solid black;
-                border-radius: 10%; 
-            }
+        h1 {
+            font-family: 'Tangerine';
+            font-size: 60px;
+        }
+        .Btn-menu {
+            display: none;
         }
     }
-            .AddButton {
-                display: inline-block;
-                margin-top: 10%;
-                .AddBtn {
-                    width: 25px;
-                }
-            }
-            .ButtonHomeContainer {
-                display: inline-block;
-                margin-top: 10%;
-                .ButtonPersonalInformation {
-                    margin-left: 100%;
-                }
-            }
+    .Enlaces {
+        display: inline-block;
+        text-align: right;
+        a {
+            color: white;
+            margin-right: 5%;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            background: #f2f2f2;
+            color: #4357ad;
+        }
+    }
 }
+
+    .PersonalInformationInfoContainer{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        .Title {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            .PersonalInformationText {
+                margin-left: 15px;
+                color: #BFBDBD;
+                font-size: 40px;
+            }
+            img {
+                margin-right: 15px;
+                width: 25px;
+                height: 25px;
+                margin-top: 22px;
+            }
+        }
+        .Subtext {
+            margin-left: 15px;
+            font-size: 18px;
+            color: #BFBDBD;
+        }
+        .Form {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            margin-left: 15px;
+            .Form-control {
+                font-family: Roboto;
+                color: #B3B0B0;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                .UserLabel {
+                    font-family: 'Roboto';
+                    font-weight: 32;
+                    color: #B3B0B0;
+                    font-size: 22px;
+                    margin-right: 15px;
+                    margin-bottom: 5px;
+                }
+                .InputLogin {
+                    border: none;
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 80%;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+        .BtnPersonalInfo {
+            width: 155px;
+            background-color: #FF4081;
+            color: white;
+            font-family: Roboto;
+            font-size: 35px;
+            height: 65px;
+            padding: 2px 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3%;
+            border-radius: 10px;
+        }
+    }
+
+    @media(max-width:576px) {
+        header {
+            .Menu {
+            }
+            .Logo {
+                h1 {
+                    font-size: 32px;
+                }
+                .Btn-menu {
+                }
+            }
+            .Enlaces {
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+        
+            .PersonalInformationInfoContainer{
+                .Title {
+                    margin-top: 8%;
+                    margin-bottom: 8%;
+                    .PersonalInformationText {
+                        font-size: 16px;
+                    }
+                }
+                .Form {
+                    .Form-control {
+                        margin-bottom: 8%;
+                        .UserLabel {
+                            font-size: 14px;
+                        }
+                        .InputLogin {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                
+                .Agenda {
+                    h3 {
+                    }
+                    img {
+                    }
+                }
+                .BtnPersonalInfo {
+                    font-size: 26px;
+                    height: 42px;
+                    width: 140px;
+                    margin-top: 0;
+                }
+            }
+    }
+
+    @media(min-width:768px) {
+        header {
+            .Menu {
+            }
+            .Logo {
+                h1 {
+                }
+                .Btn-menu {
+                }
+            }
+            .Enlaces {
+                a {
+                }
+            }
+        }
+        
+            .PersonalInformationInfoContainer{
+                .Title {
+                    margin-top: 8%;
+                    margin-bottom: 8%;
+                    .PersonalInformationText {
+                        font-size: 30px;
+                    }
+                }
+                .Form {
+                    .Form-control {
+                        margin-bottom: 4%;
+                        .UserLabel {
+                            font-size: 25px;
+                        }
+                        .InputLogin {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .BtnPersonalInfo {
+                    font-size: 35px;
+                    height: 65px;
+                    width: 160px;
+                    margin-top: 5px;
+                }
+            }
+    }

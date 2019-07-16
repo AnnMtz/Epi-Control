@@ -1,10 +1,4 @@
 .MainContainer {
-    background-image: url("../../Assets/img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.6;
-    height: 100vh;
     display: flex;
     justify-content: center;
     .ContainerLogin {
@@ -13,11 +7,43 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid black;
+        border: 1px solid darkgray;
         border-radius: 2%;
         margin-top: 2%;
-        background-color: #6c168ae3;
-        .col-sm-6{
+        -webkit-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
+        -moz-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
+        box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
+        .LoginMain{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            border: none;
+            background-color: #6A1B9A;
+            .LoginTitle {
+                font-family: 'Tangerine';
+                font-weight: 100;
+                font-size: 75px;
+                color: white;
+                margin-top: 0%;
+                margin-bottom: 2%;
+            }
+            .LoginSubtitle {
+                font-family: 'Roboto';
+                font-weight: 40;
+                color: white;
+                font-size: 20px;
+            }
+            .LoginParagraph {
+                font-weight: 30;
+                text-align: center;
+                font-size: 15px;
+                color: white;
+            }
+        }
+        .col-sm-6 {
             width: 50%;
             display: flex;
             justify-content: center;
@@ -25,58 +51,99 @@
             flex-direction: column;
             height: 100%;
             border-right: 1px solid;
-            .logo {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 10px;
-                padding-top: 10px;
-                img {
-                    width: 50%;
-                    height: 100%;
-                }
+            border-right: none;
+            .WelcomeTitle {
+                font-family: 'Roboto';
+                font-weight: 50;
+                color: #B3B0B0;
+                margin-top: 0;
             }
-            p {
-                text-align: center;
-                margin-left: 10px;
-                margin-right: 10px;
+            .WelcomeSubtitle {
+                font-weight: 40;
+                color: #B3B0B0;
+                margin-top: 0;
             }
-            .LoginTitle {
-                font-size: 35px;
+            .UserLabel {
+                font-family: 'Roboto';
+                font-weight: 32;
+                color: #B3B0B0;
             }
             .InputLogin {
-                border-radius: 10px;
-                padding: 5px;
+                border: none;
+                border-bottom: 1px solid #673AB7;
+                border-radius: 3px;
+                width: 70%;
+                margin-bottom: 6%;
             }
             .LinkPassword {
-                padding-top: 10px;
-                padding-bottom: 10px;
+                font-family: 'Roboto';
+                font-weight: 25;
+                color: #B3B0B0;
+                text-decoration: none;
+                margin-bottom: 5%;
+            }
+            .LinkRegister {
+                font-family: 'Roboto';
+                font-weight: 25;
+                color: #B3B0B0;
+                text-decoration: none;
+                margin-bottom: 5%;
             }
             .BtnLogin {
-                border-radius: 11px;
-                padding: 5px 20px;
-                font-weight: bold;
+                background-color: #FF4081;
+                width: 28%;
+                height: 6%;
+                font-size: 21px;
+                border-radius: 7px;
+                color: white;
+                font-family: Roboto;
             }
         }
     }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
     .MainContainer {
         .ContainerLogin {
-            height: 80vh;
-            margin-top: 14%;
+            margin-top: 5%;
+            height: 94vh;
+            flex-direction: column;
             .LoginMain{
-                display: none;
+                width: 100%;
+                height: 25%;
+                text-align: center;
+                .LoginTitle {
+                    font-size: 58px;
+                }
+                .LoginSubtitle {
+                    display: none;
+                }
+                .LoginParagraph {
+                    display: none;
+                }
             }
             .col-sm-6 {
                 width: 100%;
-                .LoginTitle {
-                    color: white;
-                    font-size: 30px;
+                height: 75%;
+                .WelcomeTitle {
+                    font-size: 26px;
+                }
+                .WelcomeSubtitle {
+                    font-size: 18px;
                 }
                 .UserLabel {
-                    color: white;
+                    font-size: 16px;
+                }
+                .LinkPassword {
+                    font-size: 14px;
+                }
+                .LinkRegister {
+                    font-size: 14px;
+                }
+                .BtnLogin {
+                    width: 35%;
+                    height: 10%;
+                    font-size: 20px;
                 }
             }
         }
@@ -86,79 +153,116 @@
 @media(min-width:768px) {
     .MainContainer {
         .ContainerLogin {
-            height: 76vh;
-            margin-top: 15%;
-            .col-sm-6{
-                .logo {
-                    img {
-                        width: 65%;
-                    }
-                }
-                p {
-                    font-size: 22px;
-                    color: white;
-                }
-                .LoginTitle {
-                    font-size: 35px;
-                    color: white;
-                }
-                .UserLabel {
-                    font-size: 18px;
-                    color: white;
-                    margin-bottom: 2px;
-                }
-                .InputLogin {
-                }
-                .LinkPassword {
-                    color: wheat;
-                }
-                .BtnLogin {
-                    padding: 18px 20px;
-                    color: black;
-                    font-weight: bold;
-                    font-size: 21px;
-                }
-            }
+            width: 76%;
+            height: 70vh;
+            margin-top: 14%;
         }
     }
 }
 
 @media(min-width:1200px) {
     .MainContainer {
+        display: flex;
+        justify-content: center;
         .ContainerLogin {
-            .col-sm-6{
-                .logo {
-                    img {
-                        width: 80%;
-                    }
-                }
-                p {
-                    font-size: 30px;
-                    color: white;
-                }
+            width: 70%;
+            height: 88vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid darkgray;
+            border-radius: 2%;
+            margin-top: 2%;
+            -webkit-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
+            -moz-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
+            box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
+            .LoginMain{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                border: none;
+                background-color: #6A1B9A;
                 .LoginTitle {
-                    font-size: 50px;
+                    font-family: 'Tangerine';
+                    font-weight: 100;
+                    font-size: 75px;
                     color: white;
+                    margin-top: 0%;
+                    margin-bottom: 2%;
+                }
+                .LoginSubtitle {
+                    font-family: 'Roboto';
+                    font-weight: 40;
+                    color: white;
+                    font-size: 20px;
+                }
+                .LoginParagraph {
+                    font-weight: 30;
+                    text-align: center;
+                    font-size: 15px;
+                    color: white;
+                }
+            }
+            .col-sm-6 {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                border-right: 1px solid;
+                border-right: none;
+                .WelcomeTitle {
+                    font-family: 'Roboto';
+                    font-weight: 50;
+                    color: #B3B0B0;
+                    margin-top: 0;
+                }
+                .WelcomeSubtitle {
+                    font-weight: 40;
+                    color: #B3B0B0;
+                    margin-top: 0;
                 }
                 .UserLabel {
-                    color: white;
-                    font-size: 23px;
+                    font-family: 'Roboto';
+                    font-weight: 32;
+                    color: #B3B0B0;
                 }
                 .InputLogin {
-                    padding: 10px;
+                    border: none;
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 70%;
+                    margin-bottom: 6%;
                 }
                 .LinkPassword {
-                    font-size: 25px;
-                    color: wheat;
-                    padding-top: 24px;
-                    padding-bottom: 24px;
+                    font-family: 'Roboto';
+                    font-weight: 25;
+                    color: #B3B0B0;
+                    text-decoration: none;
+                    margin-bottom: 5%;
+                }
+                .LinkRegister {
+                    font-family: 'Roboto';
+                    font-weight: 25;
+                    color: #B3B0B0;
+                    text-decoration: none;
+                    margin-bottom: 5%;
                 }
                 .BtnLogin {
-                    padding: 22px 35px;
-                    font-size: 27px;
-                    font-weight: bold;
+                    background-color: #FF4081;
+                    width: 28%;
+                    height: 6%;
+                    font-size: 21px;
+                    border-radius: 7px;
+                    color: white;
+                    font-family: Roboto;
                 }
             }
         }
     }
 }
+

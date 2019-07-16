@@ -5,28 +5,24 @@ import './Recovery.scss';
 
 const Recovery = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerRegister'>
-            <header>
-                <div className="ContainerImageRetrun">
-                    <img className="ReturnImg" src={Return} alt='return'/>
-                </div> 
-                <h1 className="RecoveryTitle">RECUPERAR CONTRASEÑA</h1>
-                <div className="ContainerImageLogo">
-                    <img className="Logo" src={Logo} alt='logo'/>
+        <div className ="ContainerLogin">
+                <div className="LoginMain">
+                <h1 className="LoginTitle">Lepsi</h1>
+                    <h3 className="LoginSubtitle">¿Sabías que?</h3>
+                    <p className="LoginParagraph">Tener convulsiones en momentos determinados puede llevar a circunstancias peligrosas para ti o para otras personas.</p>
                 </div>
-            </header>
-            <div className="RecoverInfoContainer">
-                <h3 className="Recovery">Ingresa tu correo y te haremos llegar un link para que modifiques tu contraseña y puedas acceder nuevamente.</h3>
-                <form className="FormRecovery">
-                    <div className="InfoContainer">
-                        <label className="Email">Correo <br/></label>
-                            <input className="EmailInput" placeholder="Ingresa tu correo"></input>
-                    </div>
-                    <div className="ButtonRecoveyContainer">
-                        <button className="ButtonRecovery">Enviar</button>
-                    </div>
-                </form>
-            </div>
+                <div className="col-sm-6">
+                    <h1 className="WelcomeTitle">Restablecer contraseña</h1>
+                    <label className="UserLabel" htmlFor="password">Contraseña nueva</label>
+                    <input className="InputLogin" type="text" id="password"/>
+                    <label className="UserLabel" htmlFor="password">Confirmar contraseña</label>
+                    <input className="InputLogin" type="password" id="password"/>
+                    {/* <label className="UserLabel" htmlFor="password">Contraseña</label>
+                    <input className="InputLogin" type="password" id="password"/> */}
+                    {/* <label className="UserLabel" htmlFor="password2">Confirma tu contraseña</label>
+                    <input className="InputLogin" type="password" id="password"/> */}
+                    <button className="BtnLogin" type="button">Restablecer contraseña</button>
+                </div>
         </div>
     </div>
 )

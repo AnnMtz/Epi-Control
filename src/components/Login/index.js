@@ -17,20 +17,20 @@ class Login extends Component{
         return(
             <div className ="MainContainer">
                 <div className ="ContainerLogin">
-                                <div className="col-sm-6 LoginMain">
-                                <h1 className="LoginTitle">¡BIENVENID@!</h1>
-                                    <div className="logo">
-                                        <img src={Logo} alt="logo"/>
-                                    </div>
-                                    <p>Tu mejor compañia en el seguimiento de tu epilepsía</p>
+                                <div className="LoginMain">
+                                <h1 className="LoginTitle">Lepsi</h1>
+                                    <h3 className="LoginSubtitle">¿Sabías que?</h3>
+                                    <p className="LoginParagraph">Tener convulsiones en momentos determinados puede llevar a circunstancias peligrosas para ti o para otras personas.</p>
                                 </div>
                                 <div className="col-sm-6">
-                                    <h1 className="LoginTitle">Iniciar Sesión</h1>
+                                    <h1 className="WelcomeTitle">¡BIENVENIDO!</h1>
+                                    <h3 className="WelcomeSubtitle">Iniciar Sesión</h3>
                                     <label className="UserLabel" htmlFor="user">Usuario</label>
-                                    <input className="InputLogin" type="text" placeholder="Usuario" id="user"/>
+                                    <input className="InputLogin" type="text" id="user"/>
                                     <label className="UserLabel" htmlFor="password">Contraseña</label>
-                                    <input className="InputLogin" type="password" placeholder="Contraseña" id="password"/>
-                                    <a className="LinkPassword" href="#">¿Olvidaste tu contraseña</a>
+                                    <input className="InputLogin" type="password" id="password"/>
+                                    <a className="LinkPassword" href="#">¿Olvidaste tu contraseña?</a>
+                                    <a className="LinkRegister" href="">Registrate</a>
                                     <button className="BtnLogin" type="button" onClick={this.clickLogin}>Enviar</button>
                                 </div>
                     </div>
