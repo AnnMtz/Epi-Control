@@ -43,29 +43,46 @@ header {
     }
 }
 
-    .ContacsInformationInfoContainer{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        padding-top: 2%;
+.ContacsInformationInfoContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 2%;
+    color:#333;
+    .DataCard{
+        width: 90%;
+        border: 1px solid #acacac;
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #acacac;
+        .ContactsInformationText{
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 15px;
+        }
         .EditImg {
             width: 25px;
             margin-left: auto;
             margin-right: 12%;
         }
         .FormContactsInformation {
-            padding: 5%;
-            padding-right: 0%;
-            padding-bottom: 0;
-            .text {
-                padding-right: 10px;
-            }
-            .ContactInfoInput {
-                border: none;
-                background: none;
-                border-bottom: 1px solid black;
-                border-radius: 10%;
+            .InfoContainer{
+                margin-bottom:15px;
+                .text {
+                    font-weight: bold;
+                    margin-bottom:10px;
+                    display: block;
+                }
+                .ContactInfoInput {
+                    border: 1px solid #cacaca;
+                    height: 30px;
+                    padding-left: 15px;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+
             }
             .ContainerIcons {
                 display: flex;
@@ -78,6 +95,12 @@ header {
                     height: 15px;
                 }
             }
+            .EmergencyContacts{
+                display:flex;
+                .InfoContainer{
+                    width:47%;
+                }
+            }
         }
         .AddButton {
             display: flex;
@@ -88,4 +111,5 @@ header {
                 margin-left: 5%;
             }
         }
-    }
+    } 
+}
