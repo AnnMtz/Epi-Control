@@ -113,3 +113,47 @@ header {
         }
     } 
 }
+
+@media only screen and (min-width:768px){
+    .ContacsInformationInfoContainer{
+        .DataCard{
+            width:60%;
+            .FormContactsInformation {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .InfoContainer{
+                    flex-basis:47%;
+                    flex-shrink: 0;
+                }
+                .ContainerIcons {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    .Icons {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                .EmergencyContacts{
+                    width: 100%;
+                    justify-content: space-evenly;                    
+                    .InfoContainer{
+                        width:47%;
+                    }
+                }
+            }
+            .AddButton {
+                display: flex;
+                width: 100%;
+                .AddIcons {
+                    width: 15px;
+                    margin-top: 10%;
+                    margin-left: 5%;
+                }
+            }
+        } 
+    }
+}
