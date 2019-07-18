@@ -1,26 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Add from '../../Assets/icons/add1.png';
+import Edit from '../../Assets/icons/edit.png';
 import './Medicalrecord.scss';
+import Header from '../Header';
+import { Link } from 'react-router-dom';
 
-const MedicalRecord = () => (
-    <div className = 'MainContainer'>
+class MedicalRecord extends Component{
+
+    constructor (props) {
+        super(props);
+        this.clickSave = this.clickSave.bind(this);
+    };
+    
+    clickSave = () => {
+            console.log('ya entramos');
+        this.props.history.push("/MedicalRecord")
+    }
+
+    render(){
+        return(
+            <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-        <header>
-            <nav className="Menu">
-                <div class="Logo">
-                        <h1>Lepsi</h1>
-                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
-                </div>
-                <div className="Enlaces" id="enlaces">
-                    <a href="#">Información personal</a>
-                    <a href="#">Registro médico</a>
-                    <a href="#">Historial de crisis</a>
-                </div>
-            </nav>
-            </header>
+        <Header></Header>
             <div className="PersonalInformationInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Registro Médico</h1>
+                    <Link to="/MedicalRecord"><img src={Edit} alt="editar"/></Link>
                 </div>
                 <div className="Form">
                     <div className="Form-control">
@@ -46,13 +51,15 @@ const MedicalRecord = () => (
                 </div>
                 <div className="Agenda">
                     <h3>Agenda tus citas medicas</h3>
-                    <a href=""><img src={Add} alt="agregar"/></a>
+                    <Link to="/ScheduleAppointment"><img src={Add} alt="agregar"/></Link>
                 </div>
 
-                <button className="BtnPersonalInfo" type="button">Guardar</button>
+                <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
             </div>
         </div>
     </div>
-)
+        )
+    }
+} 
 
 export default MedicalRecord;

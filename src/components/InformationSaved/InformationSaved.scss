@@ -43,117 +43,163 @@ header {
     }
 }
 
-.ContacsInformationInfoContainer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    padding-top: 2%;
-    color:#333;
-    .DataCard{
-        width: 90%;
-        border: 1px solid #acacac;
-        margin-top: 20px;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px #acacac;
-        .ContactsInformationText{
-            text-align: center;
-            margin: 0px;
-            margin-bottom: 15px;
-        }
-        .EditImg {
-            width: 25px;
-            margin-left: auto;
-            margin-right: 12%;
-        }
-        .FormContactsInformation {
-            .InfoContainer{
-                margin-bottom:15px;
-                .text {
-                    font-weight: bold;
-                    margin-bottom:10px;
-                    display: block;
-                }
-                .ContactInfoInput {
-                    border: 1px solid #cacaca;
-                    height: 30px;
-                    padding-left: 15px;
-                    width: 100%;
-                    border-radius: 5px;
-                }
-
+    .PersonalInformationInfoContainer{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        .Title {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3%;
+            .PersonalInformationText {
+                margin-left: 15px;
+                color: #BFBDBD;
+                font-size: 40px;
             }
-            .ContainerIcons {
+            img {
+                margin-right: 15px;
+                width: 25px;
+                height: 25px;
+                margin-top: 22px;
+            }
+        }
+        .Subtext {
+            margin-left: 15px;
+            font-size: 18px;
+            color: #BFBDBD;
+        }
+        .Form {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            margin-left: 15px;
+            .Form-control {
+                font-family: Roboto;
+                color: #B3B0B0;
+                .UserLabel {
+                    font-family: 'Roboto';
+                    font-weight: 32;
+                    color: #B3B0B0;
+                    font-size: 22px;
+                    margin-right: 15px;
+                }
+                .InputLogin {
+                    border: none;
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 30%;
+                    margin-bottom: 2%;
+                }
+            }
+            .Form-control-address {
                 display: flex;
-                justify-content: flex-end;
-                width: 100%;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                .Icons {
+                flex-direction: column;
+                font-family: Roboto;
+                color: #B3B0B0;
+                .InputAddress {
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 90%;
+                    margin-left: 11px;
+                    margin-bottom: 2%;
+                    height: 90px;
+                }
+            }
+        }
+        .EmergencyText {
+            margin-left: 15px;
+            color: #B3B0B0;
+            margin-bottom: 0;
+            margin-top: 2px;
+            font-size: 22px;
+        }
+        .EmergencySubtext {
+            margin-left: 15px;
+            color: #B3B0B0;
+        }
+        .Addimage {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 2%;
+            margin-left: 90%;
+        }
+        .BtnPersonalInfo {
+            width: 120px;
+            background-color: #FF4081;
+            color: white;
+            font-family: Roboto;
+            font-size: 30px;
+            height: 50px;
+            padding: 2px 15px;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media(max-width:576px) {
+        header {
+            .Menu {
+            }
+            .Logo {
+                h1 {
+                    font-size: 30px;
+                }
+                .Btn-menu {
+                }
+            }
+            .Enlaces {
+                a {
+                    font-size: 12px;
+                }
+                a:hover {
+                }
+            }
+        }
+        
+            .PersonalInformationInfoContainer{
+                .Title {
+                    .PersonalInformationText {
+                        font-size: 20px;
+                    }
+                    img {
+                        width: 20px;
+                        margin-top: 16px;
+                    }
+                }
+                .Subtext {
+                    font-size: 12px;
+                }
+                .Form {
+                    .UserLabel {
+                        font-size: 12px;
+                    }
+                    .InputLogin {
+                    }
+                    .Form-control-address {
+                        .InputAddress {
+                            margin-left: 6px;
+                            height: 60px;
+                    }
+                }
+            }
+                .EmergencyText {
+                    font-size: 16px;
+                }
+                .EmergencySubtext {
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    font-size: 10px;
+                }
+                .Addimage {
                     width: 15px;
                     height: 15px;
                 }
-            }
-            .EmergencyContacts{
-                display:flex;
-                .InfoContainer{
-                    width:47%;
+                .BtnPersonalInfo {
+                    width: 100px;
+                    font-size: 20px;
+                    height: 35px;
+                    padding: 1px 10px;
                 }
             }
-        }
-        .AddButton {
-            display: flex;
-            width: 100%;
-            .AddIcons {
-                width: 15px;
-                margin-top: 10%;
-                margin-left: 5%;
-            }
-        }
-    } 
-}
-
-@media only screen and (min-width:768px){
-    .ContacsInformationInfoContainer{
-        .DataCard{
-            width:60%;
-            .FormContactsInformation {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                .InfoContainer{
-                    flex-basis:47%;
-                    flex-shrink: 0;
-                }
-                .ContainerIcons {
-                    display: flex;
-                    justify-content: flex-end;
-                    width: 100%;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    .Icons {
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
-                .EmergencyContacts{
-                    width: 100%;
-                    justify-content: space-evenly;                    
-                    .InfoContainer{
-                        width:47%;
-                    }
-                }
-            }
-            .AddButton {
-                display: flex;
-                width: 100%;
-                .AddIcons {
-                    width: 15px;
-                    margin-top: 10%;
-                    margin-left: 5%;
-                }
-            }
-        } 
     }
-}

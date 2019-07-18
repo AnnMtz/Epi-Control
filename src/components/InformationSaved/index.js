@@ -1,69 +1,49 @@
 import React from 'react';
-import Avatar from '../../Assets/icons/avatar.png';
-import Return from '../../Assets/img/return.png';
 import Add from '../../Assets/icons/add1.png';
 import Delete from '../../Assets/icons/delete.png';
 import Edit from '../../Assets/icons/edit.png';
 import './InformationSaved.scss';
+import { Link } from 'react-router-dom';
+import Header from "../Header";
 
 const InformationSaved = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerContactsInformation'>
-        <header>
-            <nav className="Menu">
-                <div className="Logo">
-                        <h1>Lepsi</h1>
-                        <a href="#" className="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
+        <div className = 'ContainerPersonalInformation'>
+        <Header></Header>
+            <div className="PersonalInformationInfoContainer">
+                <div className="Title">
+                    <h1 className="PersonalInformationText">Información personal</h1>
+                    <Link to="/PersonalInformation"><img src={Edit} alt="editar"/></Link>
                 </div>
-                <div className="Enlaces" id="enlaces">
-                    <a href="#">Información personal</a>
-                    <a href="#">Registro médico</a>
-                    <a href="#">Historial de crisis</a>
-                </div>
-            </nav>
-            </header>
-            <div className="ContacsInformationInfoContainer">
-                <div className="DataCard">
-                    <h3 className="ContactsInformationText">INFORMACIÓN PERSONAL</h3>
-                    <img className="EditImg" src={Edit} alt='edit'/>
-                    <div className="EditButton"></div>
-                    <form className="FormContactsInformation">
-                        <div className="InfoContainer">
-                            <label className="text">Fecha de nacimiento</label>
-                            <input className="ContactInfoInput" placeholder="19/05/1987"></input>
-                        </div>
-                        <div className="InfoContainer">
-                            <label className="text">Edad</label>
-                            <input className="ContactInfoInput" placeholder="32"></input>
-                        </div>
-                        <div className="InfoContainer">
-                            <label className="text">Dirección</label>
-                            <input className="ContactInfoInput" placeholder="Av. Hidalgo No.16-B"></input>
-                        </div>
-                        <div className="InfoContainer">
-                            <label className="text">Teléfono</label>
-                            <input className="ContactInfoInput" placeholder="5555555555"></input>
-                        </div>
-                        <h3 className="ContactsInformationText">Contactos de emergencia</h3>
-                        <div className="EmergencyContacts">
-                            <div className="InfoContainer">
-                                <label className="text">Contacto 1</label>
-                                <input className="ContactInfoInput" placeholder="5542879685"></input>
-                            </div>
-                            <div className="InfoContainer">
-                                <label className="text">Contacto 2</label>
-                                <input className="ContactInfoInput" placeholder="5542879685"></input>
-                            </div>
-                        </div>
-                        <div className="ContainerIcons">
-                            <img className="Icons" src={Delete} alt='delete'/>
-                            <img className="Icons" src={Edit} alt='edit'/>
-                        </div>
-                    </form>
-                    <div className="AddButton">
-                        <img className="AddIcons" src={Add} alt='add'/>
+                <h5 className="Subtext">Complementa tu información personal  para tener todos tus datos.</h5>
+                <div className="Form">
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Fecha de <br/>nacimiento</label>
+                        <input className="InputLogin" type="text" id="user"/>
+                    </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Edad</label>
+                        <input className="InputLogin" type="text" id="user"/> Años
+                    </div>
+                    <div className="Form-control-address">
+                        <label className="UserLabel" htmlFor="user">Dirección</label>
+                        <input className="InputAddress" type="text" id="user"/>
+                    </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Teléfono</label>
+                        <input className="InputLogin" type="text" id="user"/>
+                    </div>
+                    <div className="Form-control">
+                        <label className="UserLabel" htmlFor="user">Celular</label>
+                        <input className="InputLogin" type="text" id="user"/>
                     </div>
                 </div>
+                <h3 className="EmergencyText">Contactos de emergencia</h3>
+                <h5 className="EmergencySubtext">Aquí puedes agregar tus contactos de emergencia, editar y/o eliminarlos como tu prefieras.</h5>
+                <Link to="/EmergencyContacts"><img src={Add} className="Addimage" alt="agregar"/></Link>
+                {/* <a href="#"><img src={Add} className="Addimage" alt="agregar"/></a> */}
+
+                {/* <button className="BtnPersonalInfo" type="button">Enviar</button> */}
             </div>
         </div>
     </div>

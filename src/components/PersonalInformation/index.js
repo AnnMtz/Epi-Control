@@ -1,30 +1,31 @@
-import React from 'react';
-// import Avatar from '../../Assets/icons/avatar.png';
-// import Return from '../../Assets/img/return.png';
+import React, {Component} from 'react';
 import Add from '../../Assets/icons/add1.png';
 import Edit from '../../Assets/icons/edit.png'
 import './PersonalInformation.scss';
+import { Link } from 'react-router-dom';
+import Header from '../Header'
 
-const PersonalInformation = () => (
-    <div className = 'MainContainer'>
+class PersonalInformation extends Component{
+
+    constructor (props) {
+        super(props);
+        this.clickSave = this.clickSave.bind(this);
+    };
+    
+    clickSave = () => {
+            console.log('ya entramos');
+        this.props.history.push("/InformationSaved")
+    }
+
+    render(){
+        return(
+            <div className = 'MainContainer'>
         <div className = 'ContainerPersonalInformation'>
-        <header>
-            <nav className="Menu">
-                <div class="Logo">
-                        <h1>Lepsi</h1>
-                        <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
-                </div>
-                <div className="Enlaces" id="enlaces">
-                    <a href="#">Información personal</a>
-                    <a href="#">Registro médico</a>
-                    <a href="#">Historial de crisis</a>
-                </div>
-            </nav>
-            </header>
+        <Header></Header>
             <div className="PersonalInformationInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Información personal</h1>
-                    <img src={Edit} alt="editar"/>
+                    {/* <img src={Edit} alt="editar"/> */}
                 </div>
                 <h5 className="Subtext">Complementa tu información personal  para tener todos tus datos.</h5>
                 <div className="Form">
@@ -53,10 +54,12 @@ const PersonalInformation = () => (
                 <h5 className="EmergencySubtext">Aquí puedes agregar tus contactos de emergencia, editar y/o eliminarlos como tu prefieras.</h5>
                 <a href="#"><img src={Add} className="Addimage" alt="agregar"/></a>
 
-                <button className="BtnPersonalInfo" type="button">Enviar</button>
+                <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
             </div>
         </div>
     </div>
-)
+        )
+    }
+} 
 
 export default PersonalInformation;

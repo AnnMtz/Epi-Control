@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import Logo from '../../Assets/img/logo.png';
 import './Login.scss';
+import Home from '../Home';
+import { Link } from 'react-router-dom';
 
 class Login extends Component{
 
@@ -10,9 +12,10 @@ class Login extends Component{
     };
     
     clickLogin = () => {
-        console.log('ya entramos');
-        
+            console.log('ya entramos');
+        this.props.history.push("/Home")
     }
+
     render(){
         return(
             <div className ="MainContainer">
@@ -29,8 +32,8 @@ class Login extends Component{
                                     <input className="InputLogin" type="text" id="user"/>
                                     <label className="UserLabel" htmlFor="password">Contraseña</label>
                                     <input className="InputLogin" type="password" id="password"/>
-                                    <a className="LinkPassword" href="#">¿Olvidaste tu contraseña?</a>
-                                    <a className="LinkRegister" href="">Registrate</a>
+                                    <Link to ="/Recovery" className="LinkPassword">¿Olvidaste tu contraseña?</Link>
+                                    <Link to ="/Register" className="LinkRegister">Registrate</Link>
                                     <button className="BtnLogin" type="button" onClick={this.clickLogin}>Enviar</button>
                                 </div>
                     </div>

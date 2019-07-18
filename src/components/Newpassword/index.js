@@ -1,10 +1,12 @@
 import React from 'react';
 import Logo from '../../Assets/img/logo.png';
 import './Newpassword.scss';
+import Header from '../Header'
 
 const Newpassword = () => (
     <div className = 'MainContainer'>
         <div className ="ContainerLogin">
+        <Header></Header>
                 <div className="LoginMain">
                 <h1 className="LoginTitle">Lepsi</h1>
                     <h3 className="LoginSubtitle">¿Sabías que?</h3>

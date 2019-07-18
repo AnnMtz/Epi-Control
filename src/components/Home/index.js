@@ -1,22 +1,12 @@
 import React from 'react';
 import './Home.scss';
+import Header from '../Header';
+import { Link } from 'react-router-dom';
 
 const Home = () => (
     <div className ='MainContainer'>
         <div className ='ContainerHome'>
-            <header>
-                <nav className="Menu">
-                    <div class="Logo">
-                            <h1>Lepsi</h1>
-                            <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
-                    </div>
-                    <div className="Enlaces" id="enlaces">
-                        <a href="#">Información personal</a>
-                        <a href="#">Registro médico</a>
-                        <a href="#">Historial de crisis</a>
-                    </div>
-                </nav>
-            </header>
+        <Header></Header>
             <div className="HomeInfoContainer">
                 <div className="AlertButton">
                     <button type="submit" className="Alert">Alerta</button>
