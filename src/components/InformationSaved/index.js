@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import Header from "../Header";
 
 const InformationSaved = () => (
-    <div className = 'MainContainer'>
-        <div className = 'ContainerPersonalInformation'>
+    <div className ='MainContainer'>
+        <div className='ContainerPersonalInformation'>
         <Header></Header>
             <div className="PersonalInformationInfoContainer">
                 <div className="Title">
