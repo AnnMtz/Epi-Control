@@ -7,10 +7,10 @@ const Header = () => (
         <style>
             @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Tangerine:400,700&display=swap');
         </style>
-        <nav className="Menu">
-            <div class="Logo">
-                    <Link to="/Home" className="h1"><h1>Lepsi</h1></Link>
-                    <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
+        <nav className="MenuContainer">
+            <div class="LogoContainer">
+                    <Link to="/Home" className="h1">Lepsi</Link>
+                    {/* <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt="Logo"/></a> */}
             </div>
             <div className="Enlaces is-flex" id="enlaces">
                 <Link to="/InformationSaved" className="a">Información personal</Link>
