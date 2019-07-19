@@ -118,12 +118,14 @@
 @media(max-width:576px) {
     .MainContainerRecovery {
         .ContainerRecovery {
-            height: 85vh;
-            width: 75%;
+            height: 100vh;
+            width: 100vw;
             flex-direction: column;
+            justify-content: space-between;
+            border-radius:0px;
             .RecoveryMain{
                 width: 100%;
-                height: 25%;
+                height: 15vh;
                 text-align: center;
                 .RecoveryTitle {
                     font-size: 58px;
@@ -265,9 +267,10 @@
                     .InputRecovery {
                         border: none;
                         border-bottom: 1px solid #673AB7;
-                        border-radius: 3px;
+                        border-radius: 0px;
                         width: 70%;
-                        margin-bottom: 6%;
+                        margin-bottom: 15px;
+                        height: 30px;
                     }
                 }
                 .LinkPassword {

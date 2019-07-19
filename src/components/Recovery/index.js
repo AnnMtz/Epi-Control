@@ -7,7 +7,7 @@ const Recovery = () => (
     <div className = 'MainContainerRecovery'>
         <div className ="ContainerRecovery">
                 <div className="RecoveryMain">
-                <h1 className="RecoveryTitle">Lepsi</h1>
+                <h1 className="RecoveryTitle font-tangerine">Lepsi</h1>
                     <h3 className="RecoverySubtitle">¿Sabías que?</h3>
                     <p className="RecoveryParagraph">Tener convulsiones en momentos determinados puede llevar a circunstancias peligrosas para ti o para otras personas.</p>
                 </div>
