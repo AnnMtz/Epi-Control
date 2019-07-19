@@ -17,9 +17,9 @@
                 align-items: center;
                 margin-top: 30px;
                 .Alert {
-                    height: 340px;
-                    width: 340px;
-                    font-size: 36px;
+                    height: 70vw;
+                    width: 70vw;
+                    font-size: 65px;
                     border-radius: 50%;
                     background-color: #FF4081;
                     color: white;
@@ -34,44 +34,53 @@
     }
 }
 
-    @media(max-width:576px) {
+@media(min-width:576px) {
+    .MainContainer{
+        .ContainerHome{
             .HomeInfoContainer{
                 .AlertButton {
                     .Alert {
-                        height: 110px;
-                        width: 110px;
-                        font-size: 28px;
+                        height: 350px;
+                        width: 350px;
+                        font-size: 70px;
                     }
                 }
             }
-        }
-    @media(min-width:768px) {        
+        }   
+    }
+}
+
+@media(min-width:768px) {    
+    .MainContainer{
+        .ContainerHome{   
             .HomeInfoContainer{
                 height: 90vh;
-                .Home {
-                }
                 .AlertButton {
                     .Alert {
-                        height: 260px;
-                        width: 260px;
+                        height: 350px;
+                        width: 350px;
                         font-size: 73px;
                     }
                 }
-            }
+            } 
+        }
     }
+}
 
-    @media(min-width:1200px) {
+@media(min-width:1200px) {
+    .MainContainer{
+        .ContainerHome{
             .HomeInfoContainer{
                 height: 100%;
                 background-color: none;
-                .Home {
-                }
                 .AlertButton {
                     .Alert {
-                        height: 300px;
-                        width: 300px;
-                        font-size: 100px;
+                        height: 350px;
+                        width: 350px;
+                        font-size: 70px;
                     }
                 }
-            }
+            } 
+        }
     }
+}
