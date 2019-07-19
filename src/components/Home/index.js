@@ -2,34 +2,71 @@ import React, {Component} from 'react';
 import './Home.scss';
 import Header from '../Header';
 import Consult from "../../Assets/img/consult.jpg"
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 class Home extends Component {
     constructor(props) {
         super(props)
 
         // this.mostrarPosicion = this.mostrarPosicion.bind(this);
-
         // this.mostrarErrores = this.mostrarErrores.bind(this);
-
         // this.detener = this.detener.bind(this);
-    } 
+    }
+    
+    //  mostrarPosicion(posicion) {
+    //     var latitud = posicion.coords.latitude;
+    //     var longitud = posicion.coords.longitude;
+    //     var precision = posicion.coords.accuracy;
+    
+    //     var miPosicion = new google.maps.LatLng(latitud, longitud);
+    
+    //     // Se comprueba si el mapa se ha cargado ya 
+    //     if (mapa == null) {
+    //         // Crea el mapa y lo pone en el elemento del DOM con ID mapa
+    //         var configuracion = {center: miPosicion, zoom: 16, mapTypeId: google.maps.MapTypeId.HYBRID};
+    //         mapa = new google.maps.Map(document.getElementById("mapa"), configuracion);
+    
+    //         // Crea el marcador en la posicion actual
+    //         mapaMarcador = new google.maps.Marker({position: miPosicion, title:"Esta es tu posición"});
+    //         mapaMarcador.setMap(mapa);
+    //     } else {
+    //         // Centra el mapa en la posicion actual
+    //         mapa.panTo(miPosicion);
+    //         // Pone el marcador para indicar la posicion
+    //         mapaMarcador.setPosition(miPosicion);
+    //     }
+    // }
+    
+    //  mostrarErrores(error) {
+    //     switch (error.code) {
+    //         case error.PERMISSION_DENIED:
+    //             alert('Permiso denegado por el usuario'); 
+    //             break;
+    //         case error.POSITION_UNAVAILABLE:
+    //             alert('Posición no disponible');
+    //             break; 
+    //         case error.TIMEOUT:
+    //             alert('Tiempo de espera agotado');
+    //             break;
+    //         default:
+    //             alert('Error de Geolocalización desconocido :' + error.code);
+    //     }
+    // }
+    
+    // var opciones = {
+    //     enableHighAccuracy: true,
+    //     timeout: 10000,
+    //     maximumAge: 1000
+    // };
+
+    //  detener() {
+    //     navigator.geolocation.clearWatch(watchId);
+    // }
+
 render(){
     return(
         <div className ='MainContainer'>
         <div className ='ContainerHome'>
-<<<<<<< HEAD
-        <Header></Header>
-            <div className="HomeInfoContainer">
-                <div className="AlertButton">
-                    <button type="submit" className="Alert" onClick="detener()">Alerta</button>
-                </div>
-                {/* <h3 className="Home">Ingresa nueva una nueva contraseña.</h3> */}
-                {/* <form className="FormHome">
-                    <div className="InfoContainer">
-                        <label className="Email">Correo <br/>
-                            <input className="EmailInput" placeholder="Ingresa tu correo"></input>
-                        </label>
-=======
             <Header></Header>
             <div className="PrincipalInfoContainer">
                 <div className="TipsContainer">
@@ -44,7 +81,6 @@ render(){
                             información verdadera, en lugar de tener ideas equivocadas 
                             sobre la enfermedad. Y trata de mantener tu sentido del humor.
                         </p>
->>>>>>> 11c06a5381d5f615d9a1132ec0d8ca28b806061d
                     </div>
                 </div>        
                 <div className="HomeInfoContainer">

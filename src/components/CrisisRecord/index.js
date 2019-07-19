@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './CrisisRecord.scss';
 import Header from '../Header'
 
-<<<<<<< HEAD
 class CrisisRecord extends Component{
     constructor(props){
         super(props)
@@ -36,11 +35,6 @@ render() {
     return(
         <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-=======
-const CrisisRecord = () => (
-    <div className = 'MainContainer'>
-        <div className = 'ContainerCrisisRecordInformation'>
->>>>>>> 11c06a5381d5f615d9a1132ec0d8ca28b806061d
         <Header></Header>
             <div className="CrisisRecordInfoContainer">
                 <div className="Title">

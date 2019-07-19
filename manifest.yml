@@ -1,8 +1,8 @@
-applications:
-- name: lepsi
-  path: ./build
-  memory: 256M
-  instances: 1
-  buildpacks: 
-    - staticfile_buildpack
-  random-route: true
+# applications:
+# - name: lepsi
+#   path: ./build
+#   memory: 256M
+#   instances: 1
+#   buildpacks: 
+#     - staticfile_buildpack
+#   random-route: true
