@@ -1,33 +1,37 @@
 .MainContainer{
     .ContainerHome{
-        width: 100vw;
-        height: 100vh;
-        .HomeInfoContainer{
-            width: 100%;
-            height: 100%;
-            .Home {
-                text-align: center;
-                padding-top: 5%;
-                color: #fff;
-                margin-top: 0;
-            }
-            .AlertButton {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 30px;
-                .Alert {
-                    height: 70vw;
-                    width: 70vw;
-                    font-size: 65px;
-                    border-radius: 50%;
-                    background-color: #FF4081;
-                    color: white;
-                    font-family: Roboto;
-                    border: none;
-                    -webkit-box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
-                    -moz-box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
-                    box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
+        width: 100%;
+        height: 100%;
+        .PrincipalInfoContainer{
+            display: flex;
+            flex-direction: column-reverse;
+            .HomeInfoContainer{
+                width: 100%;
+                height: 100%;
+                .Home {
+                    text-align: center;
+                    padding-top: 5%;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                .AlertButton {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+                    .Alert {
+                        height: 60vw;
+                        width: 60vw;
+                        font-size: 65px;
+                        border-radius: 50%;
+                        background-color: #FF4081;
+                        color: white;
+                        font-family: Roboto;
+                        border: none;
+                        -webkit-box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
+                        -moz-box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
+                        box-shadow: 5px 5px 19px 2px rgba(156,145,156,1);
+                    }
                 }
             }
         }
@@ -37,12 +41,53 @@
 @media(min-width:576px) {
     .MainContainer{
         .ContainerHome{
-            .HomeInfoContainer{
-                .AlertButton {
-                    .Alert {
-                        height: 350px;
-                        width: 350px;
-                        font-size: 70px;
+            .PrincipalInfoContainer{
+                flex-direction: column-reverse;
+                .HomeInfoContainer{
+                    .AlertButton {
+                        .Alert {
+                            height: 350px;
+                            width: 350px;
+                            font-size: 70px;
+                        }
+                    }
+                }
+                .TipsContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    #TitleTips{
+                        display: block;
+                        width: 100%;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-size: 50px;
+                        color: #b3b0b0;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    #InfoTipsContainer{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-top: 20px;
+                        border: 1px solid #b3b0b0;
+                        width: 80%;
+                        padding: 20px;
+                        .ImageContainer{
+                            img{
+                                width: 300px;
+                                height: 200px;
+                            }
+                        }
+                        #InfoParagraphContaier{
+                            padding: 30px;
+                            color: #b3b0b0;
+                            font-size: 22px;
+                            text-align: justify;
+                        }
                     }
                 }
             }
@@ -53,16 +98,57 @@
 @media(min-width:768px) {    
     .MainContainer{
         .ContainerHome{   
-            .HomeInfoContainer{
-                height: 90vh;
-                .AlertButton {
-                    .Alert {
-                        height: 350px;
-                        width: 350px;
-                        font-size: 73px;
+            .PrincipalInfoContainer{
+                display: flex;
+                flex-direction: column-reverse;
+                .HomeInfoContainer{
+                    .AlertButton {
+                        .Alert {
+                            height: 350px;
+                            width: 350px;
+                            font-size: 73px;
+                        }
+                    }
+                } 
+                .TipsContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    #TitleTips{
+                        display: block;
+                        width: 100%;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-size: 50px;
+                        color: #b3b0b0;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    #InfoTipsContainer{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-top: 20px;
+                        border: 1px solid #b3b0b0;
+                        width: 80%;
+                        padding: 20px;
+                        .ImageContainer{
+                            img{
+                                width: 300px;
+                                height: 200px;
+                            }
+                        }
+                        #InfoParagraphContaier{
+                            padding: 30px;
+                            color: #b3b0b0;
+                            font-size: 22px;
+                            text-align: justify;
+                        }
                     }
                 }
-            } 
+            }
         }
     }
 }
@@ -70,17 +156,55 @@
 @media(min-width:1200px) {
     .MainContainer{
         .ContainerHome{
-            .HomeInfoContainer{
-                height: 100%;
-                background-color: none;
-                .AlertButton {
-                    .Alert {
-                        height: 350px;
-                        width: 350px;
-                        font-size: 70px;
+            .PrincipalInfoContainer{
+                flex-direction: column;
+                .HomeInfoContainer{
+                    height: 38%;
+                    .AlertButton {
+                        .Alert {
+                            height: 300px;
+                            width: 300px;
+                            font-size: 70px;
+                        }
+                    }
+                } 
+                .TipsContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    #TitleTips{
+                        display: block;
+                        width: 100%;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-size: 50px;
+                        color: #b3b0b0;
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    #InfoTipsContainer{
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 20px;
+                        border: 1px solid #b3b0b0;
+                        width: 80%;
+                        padding: 20px;
+                        .ImageContainer{
+                            img{
+                                width: 300px;
+                                height: 200px;
+                            }
+                        }
+                        #InfoParagraphContaier{
+                            padding: 30px;
+                            color: #b3b0b0;
+                            font-size: 22px;
+                            text-align: justify;
+                        }
                     }
                 }
-            } 
+            }
         }
     }
 }
