@@ -1,15 +1,16 @@
 .MainContainer {
     display: flex;
     justify-content: center;
+    align-items:center;
+    height: 100vh;
     .ContainerLogin {
-        width: 70%;
-        height: 88vh;
+        width: 80%;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid darkgray;
         border-radius: 2%;
-        margin-top: 2%;
         -webkit-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
         -moz-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
         box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
@@ -41,6 +42,7 @@
                 text-align: center;
                 font-size: 15px;
                 color: white;
+                padding: 20px;
             }
         }
         .col-sm-6 {
@@ -63,17 +65,26 @@
                 color: #B3B0B0;
                 margin-top: 0;
             }
-            .UserLabel {
-                font-family: 'Roboto';
-                font-weight: 32;
-                color: #B3B0B0;
-            }
-            .InputLogin {
-                border: none;
-                border-bottom: 1px solid #673AB7;
-                border-radius: 3px;
-                width: 70%;
-                margin-bottom: 6%;
+            .InputContainer{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .UserLabel {
+                    font-family: 'Roboto';
+                    font-weight: 32;
+                    color: #B3B0B0;
+                    width: 70%;
+                    text-align: start;
+                }
+                .InputLogin {
+                    border: none;
+                    border-bottom: 1px solid #673AB7;
+                    border-radius: 3px;
+                    width: 70%;
+                    margin-bottom: 6%;
+                }
             }
             .LinkPassword {
                 font-family: 'Roboto';
@@ -91,8 +102,8 @@
             }
             .BtnLogin {
                 background-color: #FF4081;
-                width: 28%;
-                height: 6%;
+                width: 85px;
+                height: 45px;
                 font-size: 21px;
                 border-radius: 7px;
                 color: white;
@@ -105,8 +116,8 @@
 @media(max-width:576px) {
     .MainContainer {
         .ContainerLogin {
-            margin-top: 5%;
-            height: 94vh;
+            height: 85vh;
+            width: 75%;
             flex-direction: column;
             .LoginMain{
                 width: 100%;
@@ -152,10 +163,11 @@
 
 @media(min-width:768px) {
     .MainContainer {
+        height: 100vh;
+        align-items: center;
         .ContainerLogin {
             width: 76%;
             height: 70vh;
-            margin-top: 14%;
         }
     }
 }
@@ -172,7 +184,6 @@
             align-items: center;
             border: 1px solid darkgray;
             border-radius: 2%;
-            margin-top: 2%;
             -webkit-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
             -moz-box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
             box-shadow: 3px 6px 10px 0px rgba(245,237,245,1);
@@ -226,17 +237,27 @@
                     color: #B3B0B0;
                     margin-top: 0;
                 }
-                .UserLabel {
-                    font-family: 'Roboto';
-                    font-weight: 32;
-                    color: #B3B0B0;
-                }
-                .InputLogin {
-                    border: none;
-                    border-bottom: 1px solid #673AB7;
-                    border-radius: 3px;
-                    width: 70%;
-                    margin-bottom: 6%;
+                .InputContainer{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    .UserLabel {
+                        font-family: 'Roboto';
+                        font-weight: 32;
+                        color: #B3B0B0;
+                        width: 100%;
+                        text-align: start;
+                        width: 70%;
+                    }
+                    .InputLogin {
+                        border: none;
+                        border-bottom: 1px solid #673AB7;
+                        border-radius: 3px;
+                        width: 70%;
+                        margin-bottom: 6%;
+                    }
                 }
                 .LinkPassword {
                     font-family: 'Roboto';
