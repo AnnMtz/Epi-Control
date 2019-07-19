@@ -5,7 +5,7 @@ import Header from '../Header';
 const ScheduleAppointment = () => (
     <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
-        <Header></Header>
+            <Header></Header>
             <div className="PersonalInformationInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Agenda tus citas médicas</h1>
@@ -13,7 +13,7 @@ const ScheduleAppointment = () => (
                 <div className="Form">
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Fecha</label>
-                        <input className="InputLogin" type="text" id="user"/>
+                        <input className="InputLogin" type="date" id="user"/>
                     </div>
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Hora</label>
@@ -21,9 +21,9 @@ const ScheduleAppointment = () => (
                     </div>
                 </div>
                 <button className="BtnPersonalInfo" type="button">Guardar</button>
-                </div>
             </div>
         </div>
+    </div>
 )
 
 export default ScheduleAppointment;

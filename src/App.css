@@ -5,3 +5,7 @@
 .is-flex {
     display: flex!important;
 }
+
+.font-tangerine{
+	font-family: 'Tangerine', cursive !important;
+}

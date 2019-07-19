@@ -68,39 +68,51 @@
     }
 
     @media(max-width:576px) {
-    .PersonalInformationInfoContainer{
-        .Title {
-            margin-top: 8%;
-            margin-bottom: 8%;
-            .PersonalInformationText {
-                font-size: 20px;
-            }
-        }
-        .Form {
-            .Form-control {
-                margin-bottom: 15%;
-                .UserLabel {
-                    font-size: 14px;
+        .ContainerContactsInformation{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .PersonalInformationInfoContainer{
+                width:70%;
+                margin:auto;
+                .Title {
+                    margin-top: 8%;
+                    margin-bottom: 8%;
+                    .PersonalInformationText {
+                        font-size: 20px;
+                        margin-left: 0;
+                    }
                 }
-                .InputLogin {
-                    margin-bottom: 0;
+                .Form {
+                    margin-left:0px;
+                    .Form-control {
+                        margin-bottom: 15px;
+                        .UserLabel {
+                            font-size: 14px;
+                        }
+                        .InputLogin {
+                            margin-bottom: 0;
+                            width:100%;
+                            height:30px;
+                            border-radius:0px;
+                        }
+                    }
+                }
+                
+                .Agenda {
+                    h3 {
+                    }
+                    img {
+                    }
+                }
+                .BtnPersonalInfo {
+                    font-size: 26px;
+                    height: 42px;
+                    width: 140px;
+                    margin-top: 30px;
                 }
             }
         }
-        
-        .Agenda {
-            h3 {
-            }
-            img {
-            }
-        }
-        .BtnPersonalInfo {
-            font-size: 26px;
-            height: 42px;
-            width: 140px;
-            margin-top: 0;
-        }
-    }
     }
 
     @media(min-width:768px) {        
