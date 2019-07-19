@@ -7,19 +7,15 @@ class Home extends Component {
     constructor(props) {
         super(props)
 
-        this.mostrarPosicion = this.mostrarPosicion.bind(this);
+        // this.mostrarPosicion = this.mostrarPosicion.bind(this);
 
-        this.mostrarErrores = this.mostrarErrores.bind(this);
+        // this.mostrarErrores = this.mostrarErrores.bind(this);
 
-        this.detener = this.detener.bind(bind);
-    }
-        
-} 
+        // this.detener = this.detener.bind(this);
+    } 
 render(){
-    
-}
-(
-    <div className ='MainContainer'>
+    return(
+        <div className ='MainContainer'>
         <div className ='ContainerHome'>
         <Header></Header>
             <div className="HomeInfoContainer">
@@ -45,6 +41,10 @@ render(){
             </div>
         </div>
     </div>
-)
+    )
+}
+}
+
+
 
 export default Home;
