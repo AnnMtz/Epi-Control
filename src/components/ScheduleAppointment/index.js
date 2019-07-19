@@ -4,9 +4,9 @@ import Header from '../Header';
 
 const ScheduleAppointment = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerContactsInformation'>
+        <div className = 'ContainerScheduleAppointment'>
             <Header></Header>
-            <div className="PersonalInformationInfoContainer">
+            <div className="ScheduleAppointmentInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Agenda tus citas médicas</h1>
                 </div>
