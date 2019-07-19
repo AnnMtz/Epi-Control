@@ -1,13 +1,13 @@
 header {
     display: flex;
     background-color: #6A1B9A;
-    width: 100%;
+    width: 100vw;
     top: 0;
     justify-content: space-evenly;
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    .Menu {
+    .MenuContainer {
         width: 90%;
         max-width: 1000px;
         margin: auto;
@@ -16,12 +16,12 @@ header {
         justify-content: space-between;
         align-items: center;
     }
-    .Logo {
+    .LogoContainer {
         display: inline-block;
         margin-right: 1em;
         color: white;
-        h1 {
-            font-family: 'Tangerine';
+        .h1 {
+            font-family: 'Tangerine', cursive;
             font-size: 60px;
             color: white;
             text-decoration: none;

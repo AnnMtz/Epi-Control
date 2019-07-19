@@ -36,7 +36,7 @@ render() {
         <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
         <Header></Header>
-            <div className="PersonalInformationInfoContainer">
+            <div className="CrisisRecordInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Registra tus crisis aquí, lleva un control de
                     las mismas</h1>

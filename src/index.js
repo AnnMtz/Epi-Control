@@ -1,12 +1,9 @@
 import React from 'react';
-// import { render } from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-// import Home from './components/Home';
-// import Login from './components/Login';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

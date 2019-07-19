@@ -1,3 +1,8 @@
+.ContainerContactsInformation {
+    height: 100vh;
+    width: 100vw;
+}
+/*
 header {
     display: flex;
     background-color: #6A1B9A;
@@ -25,7 +30,7 @@ header {
             font-size: 60px;
         }
         .Btn-menu {
-            display: none;
+            //display: none;
         }
     }
     .Enlaces {
@@ -42,9 +47,9 @@ header {
             color: #4357ad;
         }
     }
-}
+}*/
 
-    .PersonalInformationInfoContainer{
+    .CrisisRecordInfoContainer{
         display: flex;
         justify-content: left;
         flex-direction: column;
@@ -114,7 +119,7 @@ header {
     }
 
     @media(max-width:576px) {
-        header {
+        /*header {
             .Menu {
             }
             .Logo {
@@ -129,9 +134,9 @@ header {
                     font-size: 10px;
                 }
             }
-        }
+        }*/
         
-            .PersonalInformationInfoContainer{
+            .CrisisRecordInfoContainer{
                 .Title {
                     margin-top: 8%;
                     margin-bottom: 8%;
@@ -167,7 +172,7 @@ header {
     }
 
     @media(min-width:768px) {
-        header {
+        /*header {
             .Menu {
             }
             .Logo {
@@ -180,9 +185,9 @@ header {
                 a {
                 }
             }
-        }
+        }*/
         
-            .PersonalInformationInfoContainer{
+            .CrisisRecordInfoContainer{
                 .Title {
                     margin-top: 8%;
                     margin-bottom: 8%;

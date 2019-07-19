@@ -1,15 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Home.scss';
 import Header from '../Header';
 import { Link } from 'react-router-dom';
 
-const Home = () => (
+class Home extends Component {
+    constructor(props) {
+        super(props)
+
+        this.mostrarPosicion = this.mostrarPosicion.bind(this);
+
+        this.mostrarErrores = this.mostrarErrores.bind(this);
+
+        this.detener = this.detener.bind(bind);
+    }
+        
+} 
+render(){
+    
+}
+(
     <div className ='MainContainer'>
         <div className ='ContainerHome'>
         <Header></Header>
             <div className="HomeInfoContainer">
                 <div className="AlertButton">
-                    <button type="submit" className="Alert">Alerta</button>
+                    <button type="submit" className="Alert" onClick="detener()">Alerta</button>
                 </div>
                 {/* <h3 className="Home">Ingresa nueva una nueva contraseña.</h3> */}
                 {/* <form className="FormHome">
