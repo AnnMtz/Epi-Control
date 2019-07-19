@@ -1,48 +1,3 @@
-header {
-    display: flex;
-    background-color: #6A1B9A;
-    width: 100%;
-    top: 0;
-    justify-content: space-evenly;
-    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
-    .Menu {
-        width: 90%;
-        max-width: 1000px;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .Logo {
-        display: inline-block;
-        margin-right: 1em;
-        color: white;
-        h1 {
-            font-family: 'Tangerine';
-            font-size: 55px;
-        }
-        .Btn-menu {
-            display: none;
-        }
-    }
-    .Enlaces {
-        display: inline-block;
-        text-align: right;
-        a {
-            color: white;
-            margin-right: 5%;
-            text-decoration: none;
-        }
-        a:hover {
-            background: #f2f2f2;
-            color: #4357ad;
-        }
-    }
-}
-
     .PersonalInformationInfoContainer{
         display: flex;
         justify-content: left;
@@ -113,102 +68,66 @@ header {
     }
 
     @media(max-width:576px) {
-        header {
-            .Menu {
+    .PersonalInformationInfoContainer{
+        .Title {
+            margin-top: 8%;
+            margin-bottom: 8%;
+            .PersonalInformationText {
+                font-size: 20px;
             }
-            .Logo {
-                h1 {
-                    font-size: 30px;
+        }
+        .Form {
+            .Form-control {
+                margin-bottom: 15%;
+                .UserLabel {
+                    font-size: 14px;
                 }
-                .Btn-menu {
-                }
-            }
-            .Enlaces {
-                a {
-                    font-size: 12px;
-                }
-                a:hover {
+                .InputLogin {
+                    margin-bottom: 0;
                 }
             }
         }
         
-            .PersonalInformationInfoContainer{
-                .Title {
-                    margin-top: 8%;
-                    margin-bottom: 8%;
-                    .PersonalInformationText {
-                        font-size: 20px;
-                    }
-                }
-                .Form {
-                    .Form-control {
-                        margin-bottom: 15%;
-                        .UserLabel {
-                            font-size: 14px;
-                        }
-                        .InputLogin {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-                
-                .Agenda {
-                    h3 {
-                    }
-                    img {
-                    }
-                }
-                .BtnPersonalInfo {
-                    font-size: 26px;
-                    height: 42px;
-                    width: 140px;
-                    margin-top: 0;
-                }
+        .Agenda {
+            h3 {
             }
+            img {
+            }
+        }
+        .BtnPersonalInfo {
+            font-size: 26px;
+            height: 42px;
+            width: 140px;
+            margin-top: 0;
+        }
+    }
     }
 
-    @media(min-width:768px) {
-        header {
-            .Menu {
-            }
-            .Logo {
-                h1 {
-                    font-size: 55px;
-                }
-                .Btn-menu {
+    @media(min-width:768px) {        
+        .PersonalInformationInfoContainer{
+            .Title {
+                margin-top: 8%;
+                margin-bottom: 8%;
+                .PersonalInformationText {
+                    font-size: 35px;
                 }
             }
-            .Enlaces {
-                a {
-                    font-size: 16px;
+            .Form {
+                .Form-control {
+                    margin-bottom: 15%;
+                    .UserLabel {
+                        font-size: 25px;
+                    }
+                    .InputLogin {
+                        margin-bottom: 0;
+                    }
                 }
+            }
+            .BtnPersonalInfo {
+                font-size: 35px;
+                height: 65px;
+                width: 160px;
+                margin-top: 5px;
             }
         }
-        
-            .PersonalInformationInfoContainer{
-                .Title {
-                    margin-top: 8%;
-                    margin-bottom: 8%;
-                    .PersonalInformationText {
-                        font-size: 35px;
-                    }
-                }
-                .Form {
-                    .Form-control {
-                        margin-bottom: 15%;
-                        .UserLabel {
-                            font-size: 25px;
-                        }
-                        .InputLogin {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-                .BtnPersonalInfo {
-                    font-size: 35px;
-                    height: 65px;
-                    width: 160px;
-                    margin-top: 5px;
-                }
-            }
     }
