@@ -54,8 +54,6 @@ header {
          display: flex;
          justify-content: left;
          flex-direction: column;
-         //padding-left: 10%;
-         //padding-right: 10%;
          width: 50%;
          margin-left: auto;
          margin-right: auto;
@@ -74,9 +72,9 @@ header {
                  font-size: 2rem;
              }
              img {
-                 margin-right: 10px;
                  width: 25px;
                  height: 25px;
+                 margin-right: 10px;
                  margin-top: 22px;
              }
          }
@@ -89,7 +87,6 @@ header {
              display: flex;
              justify-content: left;
              flex-direction: column;
-             //margin-left: 15px;
              .Form-control {
                  font-family: 'Roboto';
                  color: #B3B0B0;
@@ -196,6 +193,7 @@ header {
                             margin-bottom: 0;
                         }
                     }
+
                     /*.Form-control-address {
                         .InputAddress {
                             margin-left: 6px;
@@ -203,6 +201,7 @@ header {
                     }
                 }*/
             }
+            
                 .EmergencyText {
                      font-size: 16px;
                 }

@@ -1,40 +1,51 @@
-    .PersonalInformationInfoContainer{
+.ContainerScheduleAppointment {
+    height: 100vh;
+    width: 100vw;
+}    
+    
+    .ScheduleAppointmentInfoContainer{
         display: flex;
         justify-content: left;
         flex-direction: column;
+        width: 50%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 30px;
+         box-shadow: 5px 5px 10px #dadada;
+         border: 1px solid #acacac;
+         border-radius: 5px;
+         padding: 30px;
         .Title {
             display: flex;
             justify-content: space-between;
-            margin-top: 3%;
-            margin-bottom: 3%;
+            margin-top: 2%;
+            margin-bottom: 2%;
             .PersonalInformationText {
-                margin-left: 15px;
                 color: #BFBDBD;
-                font-size: 40px;
+                font-size: 2rem;
             }
-            img {
-                margin-right: 15px;
+            /*img {
                 width: 25px;
                 height: 25px;
+                margin-right: 10px;
                 margin-top: 22px;
-            }
+            }*/
         }
-        .Subtext {
+        /*.Subtext {
             margin-left: 15px;
             font-size: 18px;
             color: #BFBDBD;
-        }
+        }*/
         .Form {
             display: flex;
             justify-content: left;
             flex-direction: column;
-            margin-left: 15px;
             .Form-control {
-                font-family: Roboto;
+                font-family: 'Roboto';
                 color: #B3B0B0;
                 margin-bottom: 15px;
-                display: flex;
-                flex-direction: column;
+                //display: flex;
+                //flex-direction: column;
                 .UserLabel {
                     font-family: 'Roboto';
                     font-weight: 32;
@@ -46,55 +57,60 @@
                 .InputLogin {
                     border: none;
                     border-bottom: 1px solid #673AB7;
-                    border-radius: 3px;
-                    width: 80%;
+                    width: 100%;
+                    border-radius: 0;
                     margin-bottom: 2%;
                 }
             }
         }
         .BtnPersonalInfo {
-            width: 155px;
             background-color: #FF4081;
             color: white;
             font-family: Roboto;
-            font-size: 35px;
-            height: 65px;
-            padding: 2px 15px;
+            font-size: 1.7rem;
+            height: 60px;
+            width: 160px;
+            //padding: 2px 15px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 3%;
+            margin-top: 30px;
             border-radius: 10px;
         }
     }
 
     @media(max-width:576px) {
-        .ContainerContactsInformation{
+        .ContainerScheduleAppointment{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            .PersonalInformationInfoContainer{
-                width:70%;
-                margin:auto;
+            justify-content: flex-start;
+            .ScheduleAppointmentInfoContainer{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                box-shadow: none;
+                border: none;
+                border-radius: none;
+                padding: 0;
                 .Title {
-                    margin-top: 8%;
-                    margin-bottom: 8%;
+                    margin-top: 6%;
+                    margin-bottom: 6%;
                     .PersonalInformationText {
-                        font-size: 20px;
-                        margin-left: 0;
+                        font-size: 1.1rem;
                     }
                 }
                 .Form {
-                    margin-left:0px;
+                    //margin-left:0px;
                     .Form-control {
-                        margin-bottom: 15px;
+                        //margin-bottom: 15px;
                         .UserLabel {
-                            font-size: 14px;
+                            font-size: .9rem;
                         }
                         .InputLogin {
                             margin-bottom: 0;
-                            width:100%;
-                            height:30px;
-                            border-radius:0px;
+                            //width:100%;
+                            //height:30px;
+                            //border-radius:0px;
                         }
                     }
                 }
@@ -106,9 +122,9 @@
                     }
                 }
                 .BtnPersonalInfo {
-                    font-size: 26px;
+                    font-size: 1.4rem;
                     height: 42px;
-                    width: 140px;
+                    width: 120px;
                     margin-top: 30px;
                 }
             }
@@ -116,7 +132,7 @@
     }
 
     @media(min-width:768px) {        
-        .PersonalInformationInfoContainer{
+        .ScheduleAppointmentInfoContainer{
             .Title {
                 margin-top: 8%;
                 margin-bottom: 8%;

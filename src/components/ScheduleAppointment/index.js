@@ -6,37 +6,59 @@ class ScheduleAppointment extends Component{
 
     constructor(props) {
         super(props);
-        this.clickSave = this.clickSave.bind(this);
 
         this.state={
             medicalAppointmentDay:'',
             appointmentTime:''
         }
         this.onChange = this.onChange.bind(this);
+        this.clickSave=this.clickSave.bind(this);
     }
 
     onChange(event) {
         console.log(event.target.value);
         let target = event.target
         let value = target.value
-        this.setState = {
-            [target.name]: target.value
-        }
+        this.setState({
+            [target.name]: value
+        })
     }
 
-    clickSave = () => {
-        console.log('ya entramos');
-    this.props.history.push("/ScheduleAppointment")
-}
+    clickSave(){
+
+        let {medicalAppointmentDay, appointmentTime}=this.state;
+
+        let MedicalRegister = {
+            medicalAppointmentDay:medicalAppointmentDay,
+            appointmentTime:appointmentTime
+        }
+        
+        console.log(MedicalRegister);
+
+        var url = 'https://lepsi-backend.appspot.com/medicalschedule';
+    
+        fetch(url, {
+          method: 'POST',
+          body: JSON.stringify(MedicalRegister),
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        }).then(res => res.json())
+        .catch(error => console.error('Error:', error))
+        .then(response =>{ 
+            console.log('Success:', response)
+            this.props.history.push("/Home")
+        });
+    }
 
 render() {
-    let {medicalAppointmentDay,appointmentTime}=this.setState;
+    let {medicalAppointmentDay,appointmentTime}=this.state;
 
     return(
         <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
             <Header></Header>
-            <div className="PersonalInformationInfoContainer">
+            <div className="ScheduleAppointmentInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Agenda tus citas médicas</h1>
                 </div>
