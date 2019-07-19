@@ -5,6 +5,43 @@
         .PrincipalInfoContainer{
             display: flex;
             flex-direction: column-reverse;
+            .TipsContainer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                #TitleTips{
+                    display: block;
+                    width: 100%;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-size: 40px;
+                    color: #b3b0b0;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                #InfoTipsContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    width: 100%;
+                    padding: 20px;
+                    .ImageContainer{
+                        img{
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                    #InfoParagraphContaier{
+                        padding: 30px;
+                        color: #b3b0b0;
+                        font-size: 22px;
+                        text-align: justify;
+                    }
+                }
+            }
             .HomeInfoContainer{
                 width: 100%;
                 height: 100%;
