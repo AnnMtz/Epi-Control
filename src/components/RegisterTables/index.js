@@ -7,15 +7,16 @@ import Header from '../Header';
 
 const RegisterTables = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerContactsInformation'>
+        <div className = 'ContainerGraphicInformation'>
         <Header></Header>
-            <div className="GraphicInformationInfoContainer">
-                <h3 className="GraphicInformationText">GRÁFICA DE REGISTRO DE CRISIS</h3>
+            <div className="GraphicInfoContainer">
+                <h1 className="GraphicInformationText">Historial de Crisis</h1>
                 <div className="ViewGraphic">
                     <div className="Graphic">
-                        <button className="Graphic">Ver Tabla</button>
+                        
                     </div>
-                    <div className="AddButton">
+                    <div className="GraphAndAddButtons">
+                        <button className="GraphicButton">Ver Tabla</button>
                         <img className="AddBtn" src={Add} alt="agregar"/>
                     </div>
                 </div>

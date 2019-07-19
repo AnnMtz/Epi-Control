@@ -9,7 +9,7 @@ const Register = () => (
         <div className ="ContainerRegister">
             <div className="RegisterMain">
             <h1 className="RegisterTitle font-tangerine">Lepsi</h1>
-                <h3 className="RegisterSubtitle">¿Sabías que?</h3>
+                <h3 className="RegisterSubtitle">¿Sabías qué?</h3>
                 <p className="RegisterParagraph">Tener convulsiones en momentos determinados puede llevar a circunstancias peligrosas para ti o para otras personas.</p>
             </div>
             <div className="col-sm-6">

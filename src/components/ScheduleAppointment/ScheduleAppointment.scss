@@ -8,13 +8,13 @@
         justify-content: left;
         flex-direction: column;
         width: 50%;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top: 30px;
-         box-shadow: 5px 5px 10px #dadada;
-         border: 1px solid #acacac;
-         border-radius: 5px;
-         padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        box-shadow: 5px 5px 10px #dadada;
+        border: 1px solid #acacac;
+        border-radius: 5px;
+        padding: 30px;
         .Title {
             display: flex;
             justify-content: space-between;
@@ -36,6 +36,7 @@
             font-size: 18px;
             color: #BFBDBD;
         }*/
+
         .Form {
             display: flex;
             justify-content: left;
@@ -44,8 +45,6 @@
                 font-family: 'Roboto';
                 color: #B3B0B0;
                 margin-bottom: 15px;
-                //display: flex;
-                //flex-direction: column;
                 .UserLabel {
                     font-family: 'Roboto';
                     font-weight: 32;
@@ -70,7 +69,6 @@
             font-size: 1.7rem;
             height: 60px;
             width: 160px;
-            //padding: 2px 15px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 30px;

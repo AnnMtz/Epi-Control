@@ -27,27 +27,25 @@
             background-color: #6A1B9A;
             .RegisterTitle {
                 font-family: 'Tangerine', cursive;
-                font-weight: 100;
-                font-size: 75px;
+                font-weight: 700;
+                font-size: 9rem;
                 color: white;
                 margin-top: 0%;
                 margin-bottom: 2%;
             }
-                // .font-tangerine {
-                //     color:goldenrod;
-                // }
+
             .RegisterSubtitle {
                 font-family: 'Roboto';
-                font-weight: 40;
+                font-weight: 700;
                 color: white;
-                font-size: 20px;
+                font-size: 2rem;
             }
             .RegisterParagraph {
-                font-weight: 30;
+                font-weight: 500;
                 text-align: center;
-                font-size: 15px;
+                font-size: 1.3rem;
                 color: white;
-                padding: 20px;
+                padding: 2%;
             }
         }
         .col-sm-6 {
@@ -113,6 +111,7 @@
                 border-radius: 7px;
                 color: white;
                 font-family: Roboto;
+                margin-top: 30px;
             }
         }
     }
@@ -128,10 +127,11 @@
             justify-content: space-between;
             .RegisterMain{
                 width: 100%;
-                height: 15vh;
+                height: 18vh;
+                padding: 2% 0;
                 text-align: center;
                 .RegisterTitle {
-                    font-size: 58px;
+                    font-size: 5rem;
                 }
                 .RegisterSubtitle {
                     display: none;
@@ -145,14 +145,14 @@
                 height: 100%;
                 padding-bottom: 20px;
                 .WelcomeTitle {
-                    font-size: 26px;
+                    font-size: 1.6rem;
                 }
                 .WelcomeSubtitle {
                     font-size: 18px;
                 }
                 .InputContainer{
                     .UserLabel {
-                        font-size: 16px;
+                        font-size: 1.1rem;
                     }
                 }
                 .LinkPassword {
@@ -164,7 +164,7 @@
                 .BtnRegister {
                     width: 35%;
                     height: 10%;
-                    font-size: 20px;
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -176,6 +176,29 @@
         .ContainerRegister {
             width: 76%;
             height: 70vh;
+        }
+        .RegisterTitle {
+            // font-family: 'Tangerine';
+            font-weight: 700;
+            font-size: 9rem;
+            // color: white;
+            margin-top: 0%;
+            margin-bottom: 10%;
+        }
+        .RegisterSubtitle {
+            // font-family: 'Roboto';
+            font-weight: 700;
+            // color: white;
+            font-size: 2rem;
+            margin-top: 10%;
+            margin-bottom: 3%;
+        }
+        .RegisterParagraph {
+            font-weight: 500;
+            text-align: center;
+            font-size: 1.3rem;
+            color: white;
+            margin: 1% 4%;
         }
     }
 }
@@ -208,23 +231,26 @@
                 background-color: #6A1B9A;
                 .RegisterTitle {
                     font-family: 'Tangerine';
-                    font-weight: 100;
-                    font-size: 75px;
+                    font-weight: 700;
+                    font-size: 11rem;
                     color: white;
                     margin-top: 0%;
                     margin-bottom: 2%;
                 }
                 .RegisterSubtitle {
                     font-family: 'Roboto';
-                    font-weight: 40;
+                    font-weight: 700;
                     color: white;
-                    font-size: 20px;
+                    font-size: 2rem;
+                    margin-top: 8%;
+                    margin-bottom: 1%;
                 }
                 .RegisterParagraph {
-                    font-weight: 30;
+                    font-weight: 500;
                     text-align: center;
-                    font-size: 15px;
+                    font-size: 1.3rem;
                     color: white;
+                    margin: 1% 4%;
                 }
             }
             .col-sm-6 {
@@ -238,19 +264,19 @@
                 border-right: none;
                 .WelcomeTitle {
                     font-family: 'Roboto';
-                    font-weight: 50;
+                    font-weight: 500;
                     color: #B3B0B0;
                     margin-top: 0;
                 }
                 .WelcomeSubtitle {
-                    font-weight: 40;
+                    font-weight: 400;
                     color: #B3B0B0;
                     margin-top: 0;
                 }
                 .InputContainer{
                     .UserLabel {
                         font-family: 'Roboto';
-                        font-weight: 32;
+                        font-weight: 400;
                         color: #B3B0B0;
                     }
                     .InputRegister {
@@ -283,6 +309,7 @@
                     border-radius: 7px;
                     color: white;
                     font-family: Roboto;
+                    margin-top: 30px;
                 }
             }
         }
