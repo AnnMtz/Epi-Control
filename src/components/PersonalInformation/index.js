@@ -20,43 +20,43 @@ class PersonalInformation extends Component{
     render(){
         return(
             <div className = 'MainContainer'>
-        <div className = 'ContainerPersonalInformation'>
-        <Header></Header>
-            <div className="PersonalInformationInfoContainer">
-                <div className="Title">
-                    <h1 className="PersonalInformationText">Información personal</h1>
-                    {/* <img src={Edit} alt="editar"/> */}
+                <div className = 'ContainerPersonalInformation'>
+                <Header></Header>
+                    <div className="PersonalInformationInfoContainer">
+                        <div className="PersonalInfo">
+                        <div className="Title">Información personal
+                            {/* <img src={Edit} alt="editar"/> */}
+                        </div>
+                        <h5 className="Subtext">Complementa tu información personal  para tener todos tus datos.</h5>
+                            <div className="Form">
+                                <div className="Form-control">
+                                    <label className="UserLabel" htmlFor="user">Fecha de <br/>nacimiento</label>
+                                    <input className="InputLogin" type="text" id="user"/>
+                                </div>
+                                <div className="Form-control">
+                                    <label className="UserLabel" htmlFor="user">Edad</label>
+                                    <input className="InputLogin" type="text" id="user"/>
+                                </div>
+                                <div className="Form-control-address">
+                                    <label className="UserLabel" htmlFor="user">Dirección</label>
+                                    <input className="InputAddress" type="text" id="user"/>
+                                </div>
+                                <div className="Form-control">
+                                    <label className="UserLabel" htmlFor="user">Teléfono</label>
+                                    <input className="InputLogin" type="text" id="user"/>
+                                </div>
+                                <div className="Form-control">
+                                    <label className="UserLabel" htmlFor="user">Celular</label>
+                                    <input className="InputLogin" type="text" id="user"/>
+                                </div>
+                            </div>
+                            <h3 className="EmergencyText">Contactos de emergencia</h3>
+                            <h5 className="EmergencySubtext">Aquí puedes agregar tus contactos de emergencia, editar y/o eliminarlos como tu prefieras.</h5>
+                            <a href="#"><img src={Add} className="Addimage" alt="agregar"/></a>
+                            <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
+                        </div>
+                    </div>
                 </div>
-                <h5 className="Subtext">Complementa tu información personal  para tener todos tus datos.</h5>
-                <div className="Form">
-                    <div className="Form-control">
-                        <label className="UserLabel" htmlFor="user">Fecha de <br/>nacimiento</label>
-                        <input className="InputLogin" type="text" id="user"/>
-                    </div>
-                    <div className="Form-control">
-                        <label className="UserLabel" htmlFor="user">Edad</label>
-                        <input className="InputLogin" type="text" id="user"/> Años
-                    </div>
-                    <div className="Form-control-address">
-                        <label className="UserLabel" htmlFor="user">Dirección</label>
-                        <input className="InputAddress" type="text" id="user"/>
-                    </div>
-                    <div className="Form-control">
-                        <label className="UserLabel" htmlFor="user">Teléfono</label>
-                        <input className="InputLogin" type="text" id="user"/>
-                    </div>
-                    <div className="Form-control">
-                        <label className="UserLabel" htmlFor="user">Celular</label>
-                        <input className="InputLogin" type="text" id="user"/>
-                    </div>
-                </div>
-                <h3 className="EmergencyText">Contactos de emergencia</h3>
-                <h5 className="EmergencySubtext">Aquí puedes agregar tus contactos de emergencia, editar y/o eliminarlos como tu prefieras.</h5>
-                <a href="#"><img src={Add} className="Addimage" alt="agregar"/></a>
-
-                <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
-            </div>
-        </div>
     </div>
         )
     }
