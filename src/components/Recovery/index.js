@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Logo from '../../Assets/img/logo.png';
 import Return from '../../Assets/img/return.png';
 import './Recovery.scss';

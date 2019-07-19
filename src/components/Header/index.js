@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Header = () => (
     <header>
     <nav className="Menu">
-        <div class="Logo">
+        <div className="Logo">
                 <Link to="/Home" className="h1"><h1>Lepsi</h1></Link>
-                <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
+                <a href="#" className="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
         </div>
         <div className="Enlaces is-flex" id="enlaces">
             <Link to="/InformationSaved" className="a">Información personal</Link>

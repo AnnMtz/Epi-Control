@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, {Component} from 'react';
 import Logo from '../../Assets/img/logo.png';
 import './Login.scss';
 import Home from '../Home';
@@ -8,8 +8,23 @@ class Login extends Component{
 
     constructor (props) {
         super(props);
+        this.state = {
+            emailPacient:'',
+            passwordPacient:''
+        }
+        this.onChange = this.onChange.bind(this);
+
         this.clickLogin = this.clickLogin.bind(this);
-    };
+    }
+
+    onChange(event) {
+        console.log(event.target.value);
+        let target = event.target
+        let value = target.value
+        this.setState = {
+            [target.name]: target.value
+        }
+    }
     
     clickLogin = () => {
             console.log('ya entramos');
@@ -17,6 +32,7 @@ class Login extends Component{
     }
 
     render(){
+        let{emailPacient,passwordPacient}=this.setState;
         return(
             <div className ="MainContainer">
                 <div className ="ContainerLogin">
@@ -30,11 +46,11 @@ class Login extends Component{
                         <h3 className="WelcomeSubtitle">Iniciar Sesión</h3>
                         <div className="InputContainer">
                             <label className="UserLabel" htmlFor="user">Usuario</label>
-                            <input className="InputLogin" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="user" name="emailPacient" value={emailPacient} onChange={this.onChange}/>
                         </div>
                         <div className="InputContainer">
                             <label className="UserLabel" htmlFor="password">Contraseña</label>
-                            <input className="InputLogin" type="password" id="password"/>
+                            <input className="InputLogin" type="password" id="password" name="passwordPacient" value={passwordPacient} onChange={this.onChange}/>
                         </div>
                         <Link to ="/Recovery" className="LinkPassword">¿Olvidaste tu contraseña?</Link>
                         <Link to ="/Register" className="LinkRegister">Registrate</Link>

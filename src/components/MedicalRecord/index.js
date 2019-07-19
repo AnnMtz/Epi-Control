@@ -10,7 +10,25 @@ class MedicalRecord extends Component{
     constructor (props) {
         super(props);
         this.clickSave = this.clickSave.bind(this);
-    };
+
+        this.state={
+            medicalDiagnostic:'',
+            diagnosisYears:'',
+            medicine:'',
+            medicamentationDose:'',
+            medicationHours:''
+        }
+        this.onChange = this.onChange.bind(this);
+    }
+
+    onChange(event) {
+        console.log(event.target.value);
+        let target = event.target
+        let value = target.value
+        this.setState = {
+            [target.name]: target.value
+        }
+    }
     
     clickSave = () => {
             console.log('ya entramos');
@@ -18,6 +36,8 @@ class MedicalRecord extends Component{
     }
 
     render(){
+
+        let {medicalDiagnostic,diagnosisYears,medicine,medicamentationDose,medicationHours}=this.setState;
         return(
             <div className = 'MainContainer'>
         <div className = 'ContainerContactsInformation'>
@@ -30,23 +50,23 @@ class MedicalRecord extends Component{
                 <div className="Form">
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Diagnóstico</label>
-                        <input className="InputLogin" type="text" id="user"/>
+                        <input className="InputLogin" type="text" id="user" name="medicalDiagnostic" value={medicalDiagnostic} onChange={this.onChange}/>
                     </div>
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Años de diagnóstico</label>
-                        <input className="InputLogin" type="text" id="user"/>
+                        <input className="InputLogin" type="text" id="user" name="diagnosisYears" value={diagnosisYears} onChange={this.onChange}/>
                     </div>
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Medicamento</label>
-                        <input className="InputLogin" type="text" id="user"/>
+                        <input className="InputLogin" type="text" id="user" name="medicine" value={medicine} onChange={this.onChange}/>
                     </div>
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Dosis</label>
-                        <input className="InputLogin" type="text" id="user"/>
+                        <input className="InputLogin" type="text" id="user" name="medicamentationDose" value={medicamentationDose} onChange={this.onChange}/>
                     </div>
                     <div className="Form-control">
                         <label className="UserLabel" htmlFor="user">Horario</label>
-                        <input className="InputLogin" type="text" id="user"/>
+                        <input className="InputLogin" type="text" id="user" name="medicationHours" value={medicationHours} onChange={this.onChange}/>
                     </div>
                 </div>
                 <div className="Agenda">

@@ -8,8 +8,28 @@ class EmergencyContacts extends Component{
 
     constructor (props) {
         super(props);
+        
+        this.state={
+            contactName:'',
+            contactLastname:'',
+            contactRelationship:'',
+            concactPhone:'',
+            contactCelphone:''
+        }
+
+        this.onChange = this.onChange.bind(this);
+
         this.clickSave = this.clickSave.bind(this);
-    };
+    }
+
+    onChange(event) {
+        console.log(event.target.value);
+        let target = event.target
+        let value = target.value
+        this.setState = {
+            [target.name]: target.value
+        }
+    }
     
     clickSave = () => {
             console.log('ya entramos');
@@ -17,6 +37,8 @@ class EmergencyContacts extends Component{
     }
 
     render(){
+
+        let {contactName,contactLastname,contactRelationship,concactPhone,contactCelphone}=this.setState;
         return(
             <div className = 'MainContainer'>
             <div className = 'ContainerContactsInformation'>
@@ -29,27 +51,23 @@ class EmergencyContacts extends Component{
                     <div className="Form">
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Nombre</label>
-                            <input className="InputLogin" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="user" name="contactName" value={contactName} onChange={this.onChange}/>
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Apellidos</label>
-                            <input className="InputLogin" type="text" id="user"/> Años
+                            <input className="InputLogin" type="text" id="user" name="contactLastname" value={contactLastname} onChange={this.onChange}/> Años
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Parentesco</label>
-                            <input className="InputLogin" type="text" id="user"/> Años
+                            <input className="InputLogin" type="text" id="user" name="contactRelationship" value={contactRelationship} onChange={this.onChange}/> Años
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Teléfono</label>
-                            <input className="InputLogin" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="user" name="concactPhone" value={concactPhone} onChange={this.onChange}/>
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Celular</label>
-                            <input className="InputLogin" type="text" id="user"/>
-                        </div>
-                        <div className="Form-control-address">
-                            <label className="UserLabel" htmlFor="user">Dirección</label>
-                            <input className="InputAddress" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="user" name="contactCelphone" value={contactCelphone} onChange={this.onChange}/>
                         </div>
                     </div>
     
