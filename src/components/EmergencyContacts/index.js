@@ -41,9 +41,9 @@ class EmergencyContacts extends Component{
         let {contactName,contactLastname,contactRelationship,concactPhone,contactCelphone}=this.setState;
         return(
             <div className = 'MainContainer'>
-            <div className = 'ContainerContactsInformation'>
+            <div className = 'ContainerEmergencyContactsInformation'>
             <Header></Header>
-                <div className="PersonalInformationInfoContainer">
+                <div className="EmergencyContactsInfoContainer">
                     <div className="Title">
                         <h1 className="PersonalInformationText">Agregar un contacto de emergencia</h1>
                         <Link to="/EmergencyContacts"><img src={Edit} alt="editar"/></Link>
@@ -51,6 +51,7 @@ class EmergencyContacts extends Component{
                     <div className="Form">
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Nombre</label>
+<<<<<<< HEAD
                             <input className="InputLogin" type="text" id="user" name="contactName" value={contactName} onChange={this.onChange}/>
                         </div>
                         <div className="Form-control">
@@ -68,6 +69,29 @@ class EmergencyContacts extends Component{
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Celular</label>
                             <input className="InputLogin" type="text" id="user" name="contactCelphone" value={contactCelphone} onChange={this.onChange}/>
+=======
+                            <input className="InputLogin" type="text" id="firstName"/>
+                        </div>
+                        <div className="Form-control">
+                            <label className="UserLabel" htmlFor="user">Apellidos</label>
+                            <input className="InputLogin" type="text" id="secondName"/>
+                        </div>
+                        <div className="Form-control">
+                            <label className="UserLabel" htmlFor="user">Parentesco</label>
+                            <input className="InputLogin" type="text" id="kinship"/>
+                        </div>
+                        <div className="Form-control">
+                            <label className="UserLabel" htmlFor="user">Teléfono</label>
+                            <input className="InputLogin" type="text" id="phone"/>
+                        </div>
+                        <div className="Form-control">
+                            <label className="UserLabel" htmlFor="user">Celular</label>
+                            <input className="InputLogin" type="text" id="mobile"/>
+                        </div>
+                        <div className="Form-control">
+                            <label className="UserLabel" htmlFor="user">Dirección</label>
+                            <input className="InputLogin" type="text" id="address"/>
+>>>>>>> 11c06a5381d5f615d9a1132ec0d8ca28b806061d
                         </div>
                     </div>
     

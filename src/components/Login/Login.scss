@@ -24,7 +24,7 @@
             border: none;
             background-color: #6A1B9A;
             .LoginTitle {
-                font-family: 'Tangerine';
+                font-family: 'Tangerine', cursive;
                 font-weight: 100;
                 font-size: 75px;
                 color: white;
@@ -81,9 +81,9 @@
                 .InputLogin {
                     border: none;
                     border-bottom: 1px solid #673AB7;
-                    border-radius: 3px;
                     width: 70%;
-                    margin-bottom: 6%;
+                    margin-bottom: 15px;
+                    height:30px;
                 }
             }
             .LinkPassword {
@@ -116,12 +116,15 @@
 @media(max-width:576px) {
     .MainContainer {
         .ContainerLogin {
-            height: 85vh;
-            width: 75%;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
             flex-direction: column;
+            justify-content: space-between;
+            border-radius:0px;
             .LoginMain{
                 width: 100%;
-                height: 25%;
+                height: 15vh;
                 text-align: center;
                 .LoginTitle {
                     font-size: 58px;

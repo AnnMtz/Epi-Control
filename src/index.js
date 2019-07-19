@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { BrowserRouter, Switch, Route } from "react-router-dom"
+=======
+// import { render } from "react-dom";
+>>>>>>> 11c06a5381d5f615d9a1132ec0d8ca28b806061d
 import ReactDOM from 'react-dom';
 // import './index.css';
 import App from './App';
@@ -11,20 +15,3 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-// const App = () => {
-//     <BrowserRouter>
-//         <switch>
-//             <Route path="/" component={Login}/>
-//             <Route path="/Home" component={Home}/>
-//             <Route path="/Register" component={Register}/>
-//             <Route path="/Recovery" component={Recovery}/>
-//             <Route path="/PersonalInformation" component={PersonalInformation} exact/>
-//             <Route path="/MedicalRecord" component={MedicalRecodr}/>
-//             <Route path="/InformationSaved" component={InformationSaved}/>
-//             <Route path="/RegisterTables" component={RegisterTables}/>
-//             <Route path="/ScheduleAppointment" component={ScheduleAppointment}/>
-//             <Route path="/TableRegister" component={TableRegister}/> 
-//         </switch>
-//     </BrowserRouter>
-// }
