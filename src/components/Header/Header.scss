@@ -20,58 +20,11 @@ header {
         display: inline-block;
         margin-right: 1em;
         color: white;
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        .h1 {
+        h1 {
             font-family: 'Tangerine';
-            font-size: 55px;
+            font-size: 60px;
+            color: white;
+            text-decoration: none;
         }
         .Btn-menu {
             display: none;
@@ -84,6 +37,7 @@ header {
             color: white;
             margin-right: 5%;
             text-decoration: none;
+            font-size: 18px;
         }
         a:hover {
             background: #f2f2f2;

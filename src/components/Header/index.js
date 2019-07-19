@@ -9,7 +9,7 @@ const Header = () => (
                 <Link to="/Home" className="h1"><h1>Lepsi</h1></Link>
                 <a href="#" class="Btn-menu" id="btn-menu"><img id="btnMenu" src="img/menu.png" alt=""/></a>
         </div>
-        <div className="Enlaces" id="enlaces">
+        <div className="Enlaces is-flex" id="enlaces">
             <Link to="/InformationSaved" className="a">Información personal</Link>
             <Link to="/MedicalRecord" className="a">Registro médico</Link>
             <Link to="/CrisisRecord" className="a">Historial de crisis</Link>
