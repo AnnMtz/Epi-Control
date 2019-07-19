@@ -1,4 +1,4 @@
-.ContainerContactsInformation {
+.ContainerCrisisRecordInformation {
     height: 100vh;
     width: 100vw;
 }
@@ -71,18 +71,18 @@ header {
                 color: #BFBDBD;
                 font-size: 2rem;
             }
-            img {
-                margin-right: 15px;
-                width: 25px;
-                height: 25px;
-                margin-top: 22px;
-            }
+            // img {
+            //     width: 25px;
+            //     height: 25px;
+            //     margin-right: 10px;
+            //     margin-top: 22px;
+            // }
         }
-        .Subtext {
-            margin-left: 15px;
-            font-size: 18px;
-            color: #BFBDBD;
-        }
+        // .Subtext {
+        //     margin-left: 15px;
+        //     font-size: 18px;
+        //     color: #BFBDBD;
+        // }
         .Form {
             display: flex;
             justify-content: left;
@@ -144,6 +144,12 @@ header {
             }
         }*/
         
+        .ContainerCrisisRecordInformation {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
             .CrisisRecordInfoContainer{
                 width: 70%;
                 margin-left: auto;
@@ -178,6 +184,7 @@ header {
                     img {
                     }
                 }*/
+                
                 .BtnPersonalInfo {
                     font-size: 1.4rem;
                     height: 42px;
@@ -226,7 +233,7 @@ header {
                     font-size: 1.7rem;
                     height: 60px;
                     width: 160px;
-                    margin-top: 15px;
+                    margin-top: 30px;
                 }
             }
     }
