@@ -31,8 +31,15 @@
             .Graphic {
                 width: 100%;
                 height: 60%;
-                border: 1px dotted gray;
+                //border: 1px dotted gray;
                 margin-bottom: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // .chart {
+                //     width: 90%;
+                //     height: 90%;
+                // }
             }
             .GraphAndAddButtons {
                 display: flex;
@@ -76,7 +83,11 @@
                 .GraphicInformationText {
                     font-size: 1.1rem;
                 }
+
                 .ViewGraphic {
+                    .Graphic {
+
+                    }
                     .GraphicButton {
                         font-size: 1.2rem;
                         height: 35px;
