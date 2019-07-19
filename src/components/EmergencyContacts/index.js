@@ -21,7 +21,7 @@ class EmergencyContacts extends Component{
             <div className = 'MainContainer'>
             <div className = 'ContainerContactsInformation'>
             <Header></Header>
-                <div className="PersonalInformationInfoContainer">
+                <div className="EmergencyContactsInfoContainer">
                     <div className="Title">
                         <h1 className="PersonalInformationText">Agregar un contacto de emergencia</h1>
                         <Link to="/EmergencyContacts"><img src={Edit} alt="editar"/></Link>
@@ -33,11 +33,11 @@ class EmergencyContacts extends Component{
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Apellidos</label>
-                            <input className="InputLogin" type="text" id="secondName"/> Años
+                            <input className="InputLogin" type="text" id="secondName"/>
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Parentesco</label>
-                            <input className="InputLogin" type="text" id="kinship"/> Años
+                            <input className="InputLogin" type="text" id="kinship"/>
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Teléfono</label>
@@ -47,9 +47,9 @@ class EmergencyContacts extends Component{
                             <label className="UserLabel" htmlFor="user">Celular</label>
                             <input className="InputLogin" type="text" id="mobile"/>
                         </div>
-                        <div className="Form-control-address">
+                        <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Dirección</label>
-                            <input className="InputAddress" type="text" id="address"/>
+                            <input className="InputLogin" type="text" id="address"/>
                         </div>
                     </div>
     

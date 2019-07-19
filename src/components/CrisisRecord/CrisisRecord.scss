@@ -54,8 +54,14 @@ header {
         display: flex;
         justify-content: left;
         flex-direction: column;
-        padding-left: 7%;
-        padding-right: 18%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        box-shadow: 5px 5px 10px #dadada;
+        border: 1px solid #acacac;
+        border-radius: 5px;
+        padding: 30px;
         .Title {
             display: flex;
             justify-content: space-between;
@@ -139,8 +145,14 @@ header {
         }*/
         
             .CrisisRecordInfoContainer{
-                padding-left: 7%;
-                padding-right: 7%;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                box-shadow: none;
+                border: none;
+                border-radius: none;
+                padding: 0;
                 .Title {
                     margin-top: 6%;
                     margin-bottom: 6%;
@@ -160,17 +172,17 @@ header {
                     }
                 }
                 
-                .Agenda {
+                /*.Agenda {
                     h3 {
                     }
                     img {
                     }
-                }
+                }*/
                 .BtnPersonalInfo {
                     font-size: 1.4rem;
                     height: 42px;
                     width: 120px;
-                    margin-top: 0;
+                    margin-top: 30px;
                 }
             }
     }
@@ -214,7 +226,7 @@ header {
                     font-size: 1.7rem;
                     height: 60px;
                     width: 160px;
-                    margin-top: 5px;
+                    margin-top: 15px;
                 }
             }
     }
