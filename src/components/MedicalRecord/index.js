@@ -20,9 +20,9 @@ class MedicalRecord extends Component{
     render(){
         return(
             <div className = 'MainContainer'>
-        <div className = 'ContainerContactsInformation'>
+        <div className = 'ContainerMedicalRecordInformation'>
         <Header></Header>
-            <div className="PersonalInformationInfoContainer">
+            <div className="MedicalRecordInfoContainer">
                 <div className="Title">
                     <h1 className="PersonalInformationText">Registro Médico</h1>
                     <Link to="/MedicalRecord"><img src={Edit} alt="editar"/></Link>
