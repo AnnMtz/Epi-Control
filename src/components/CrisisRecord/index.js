@@ -4,7 +4,7 @@ import Header from '../Header'
 
 const CrisisRecord = () => (
     <div className = 'MainContainer'>
-        <div className = 'ContainerContactsInformation'>
+        <div className = 'ContainerCrisisRecordInformation'>
         <Header></Header>
             <div className="CrisisRecordInfoContainer">
                 <div className="Title">

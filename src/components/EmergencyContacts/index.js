@@ -19,7 +19,7 @@ class EmergencyContacts extends Component{
     render(){
         return(
             <div className = 'MainContainer'>
-            <div className = 'ContainerContactsInformation'>
+            <div className = 'ContainerEmergencyContactsInformation'>
             <Header></Header>
                 <div className="EmergencyContactsInfoContainer">
                     <div className="Title">

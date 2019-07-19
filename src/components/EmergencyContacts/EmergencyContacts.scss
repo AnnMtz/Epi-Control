@@ -1,4 +1,4 @@
-.ContainerContactsInformation {
+.ContainerEmergencyContactsInformation {
     height: 100vh;
     width: 100vw;
 }
@@ -103,7 +103,7 @@ header {
                      margin-bottom: 5px;
                  }
                  .InputLogin {
-                    border: none;
+                     border: none;
                      border-bottom: 1px solid #673AB7;
                      width: 100%;
                      border-radius: 0;
@@ -126,17 +126,16 @@ header {
             }*/
         }
         .BtnPersonalInfo {
-            display: none;
-            width: 155px;
             background-color: #FF4081;
             color: white;
-            font-family: Roboto;
-            font-size: 35px;
-            height: 65px;
-            padding: 2px 15px;
+            font-family: 'Roboto';
+            font-size: 1.7rem;
+            height: 60px;
+            width: 160px;
+            //padding: 2px 15px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 3%;
+            margin-top: 30px;
             border-radius: 10px;
         }
     }
@@ -161,6 +160,12 @@ header {
             }
         }*/
         
+        .ContainerEmergencyContactsInformation {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
             .EmergencyContactsInfoContainer{
                 width: 70%;
                 margin-left: auto;
@@ -212,10 +217,9 @@ header {
                 }
                 .BtnPersonalInfo {
                     font-size: 1.4rem;
-                    height: 35px;
-                    width: 100px;
+                    height: 42px;
+                    width: 120px;
                     margin-top: 30px;
-                    //padding: 1px 10px;
                 }
             }
     }
