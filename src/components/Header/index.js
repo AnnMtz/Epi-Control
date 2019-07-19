@@ -6,7 +6,7 @@ import Menu from "../../Assets/icons/menu.png";
 const Header = () => (
     <header>
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Tangerine:400,700&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Tangerine:400,700&display=swap');
         </style>
         <nav className="MenuContainer">
             <div className="LogoContainer">

@@ -29,27 +29,27 @@ class EmergencyContacts extends Component{
                     <div className="Form">
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Nombre</label>
-                            <input className="InputLogin" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="firstName"/>
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Apellidos</label>
-                            <input className="InputLogin" type="text" id="user"/> Años
+                            <input className="InputLogin" type="text" id="secondName"/> Años
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Parentesco</label>
-                            <input className="InputLogin" type="text" id="user"/> Años
+                            <input className="InputLogin" type="text" id="kinship"/> Años
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Teléfono</label>
-                            <input className="InputLogin" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="phone"/>
                         </div>
                         <div className="Form-control">
                             <label className="UserLabel" htmlFor="user">Celular</label>
-                            <input className="InputLogin" type="text" id="user"/>
+                            <input className="InputLogin" type="text" id="mobile"/>
                         </div>
                         <div className="Form-control-address">
                             <label className="UserLabel" htmlFor="user">Dirección</label>
-                            <input className="InputAddress" type="text" id="user"/>
+                            <input className="InputAddress" type="text" id="address"/>
                         </div>
                     </div>
     
