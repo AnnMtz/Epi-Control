@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Avatar from '../../Assets/icons/avatar.png';
-import Return from '../../Assets/img/return.png';
 import Add from '../../Assets/icons/add1.png';
 import './RegisterTables.scss';
+import { Link } from 'react-router-dom';
 import Header from '../Header';
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
 
@@ -47,8 +46,12 @@ class RegisterTables extends Component {
                         <Graph></Graph>
                     </div>
                     <div className="GraphAndAddButtons">
-                        <button className="GraphicButton">Ver Tabla</button>
-                        <img className="AddBtn" src={Add} alt="agregar"/>
+                        <Link to="/TableRegister">
+                            <button className="GraphicButton">Ver Tabla</button>
+                        </Link>
+                        <Link to="/CrisisRecord">
+                            <img className="AddBtn" src={Add} alt="agregar"/>
+                        </Link>
                     </div>
                 </div>
 

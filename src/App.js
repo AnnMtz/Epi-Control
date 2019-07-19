@@ -28,7 +28,6 @@ class App extends Component{
                   <Route path="/InformationSaved" component={InformationSaved} exact/>
                   <Route path="/MedicalRecord" component={MedicalRecord}/>
                   <Route path="/EmergencyContacts" component={EmergencyContacts}/>
-                  <Route path="/InformationSaved" component={InformationSaved}/>
                   <Route path="/CrisisRecord" component={CrisisRecord}/>
                   <Route path="/RegisterTables" component={RegisterTables}/>
                   <Route path="/ScheduleAppointment" component={ScheduleAppointment}/>

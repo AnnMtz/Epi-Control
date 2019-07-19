@@ -4,11 +4,18 @@
         height: 100%;    
             .PersonalInformationInfoContainer{
                 display: flex;
-                justify-content: left;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 padding: 40px;
                 .PersonalInfo{
-                    width: 90%;
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    box-shadow: 5px 5px 10px #dadada;
+                    border: 1px solid #acacac;
+                    border-radius: 5px;
+                    padding: 30px;
                     .Title {
                         // display: flex;
                         // justify-content: space-between;
@@ -34,24 +41,26 @@
                         display: flex;
                         justify-content: left;
                         flex-direction: column;
-                        width: 80%;
+                        width: 100%;
                         // margin-left: 15px;
                         .Form-control {
                             font-family: Roboto;
                             color: #B3B0B0;
+                            display: flex;
+                            flex-direction: column;
                             .UserLabel {
                                 font-family: 'Roboto';
                                 font-weight: 32;
                                 color: #B3B0B0;
                                 font-size: 22px;
-                                width: 200px;
                             }
                             .InputLogin {
                                 border: none;
                                 border-bottom: 1px solid #673AB7;
                                 border-radius: 3px;
-                                width: 30%;
+                                width: 100%;
                                 margin-bottom: 2%;
+
                             }
                         }
                         .Form-control-address {
@@ -70,15 +79,15 @@
                         }
                     }
                     .EmergencyText {
-                        margin-left: 15px;
+                        // margin-left: 15px;
                         color: #B3B0B0;
                         margin-bottom: 0;
-                        margin-top: 2px;
-                        font-size: 22px;
+                        margin-top: 30px;
+                        font-size: 25px;
                     }
                     .EmergencySubtext {
-                        margin-left: 15px;
                         color: #B3B0B0;
+                        font-size: 18px;
                     }
                     .Addimage {
                         width: 28px;
@@ -97,61 +106,62 @@
                         align-items: center;
                         margin-left: auto;
                         margin-right: auto;
+
+                        background-color: #FF4081;
+                        color: white;
+                        font-family: Roboto;
+                        font-size: 1.7rem;
+                        height: 60px;
+                        width: 160px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 10px;
                     }
                 }
             }
     }
 }
 
+@media(max-width:992px){
+    .MainContainer{
+        .ContainerPersonalInformation{
+            width: 100%;
+            height: 100%;    
+                .PersonalInformationInfoContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 40px;
+                }
+            }
+        }
+}
 
+@media(max-width:768px){
+    .MainContainer{
+        .ContainerPersonalInformation{  
+                .PersonalInformationInfoContainer{
+                    .PersonalInfo{
+                            width: 70vw;
+                    }
+                }
+            }
+        }
+}
 
-// @media(max-width:576px) {    
-//     .PersonalInformationInfoContainer{
-//         .Title {
-//             .PersonalInformationText {
-//                 font-size: 20px;
-//             }
-//             img {
-//                 width: 20px;
-//                 margin-top: 16px;
-//             }
-//         }
-//         .Subtext {
-//             font-size: 12px;
-//         }
-//         .Form {
-//             .UserLabel {
-//                 font-size: 12px;
-//             }
-//             .InputLogin {
-//             }
-//             .Form-control-address {
-//                 .InputAddress {
-//                     margin-left: 6px;
-//                     height: 60px;
-//             }
-//         }
-//     }
-//         .EmergencyText {
-//             font-size: 16px;
-//         }
-//         .EmergencySubtext {
-//             margin-top: 5px;
-//             margin-bottom: 0;
-//             font-size: 10px;
-//         }
-//         .Addimage {
-//             width: 15px;
-//             height: 15px;
-//         }
-//         .BtnPersonalInfo {
-//             width: 100px;
-//             font-size: 20px;
-//             height: 35px;
-//             padding: 1px 10px;
-//         }
-//     }
-// }
-
-
-
+@media(max-width:576px){
+    .MainContainer{
+        .ContainerPersonalInformation{  
+            width: 100vw;
+            height: 100vh;
+                .PersonalInformationInfoContainer{
+                    padding: 0px;
+                    .PersonalInfo{
+                            width: 100vw;
+                            margin: 0px;
+                    }
+                }
+            }
+        }
+}

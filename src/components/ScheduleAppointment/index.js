@@ -1,6 +1,7 @@
 import React from 'react';
 import './ScheduleAppointment.scss';
 import Header from '../Header';
+import { Link } from 'react-router-dom';
 
 const ScheduleAppointment = () => (
     <div className = 'MainContainer'>
@@ -20,7 +21,9 @@ const ScheduleAppointment = () => (
                         <input className="InputLogin" type="text" id="user"/>
                     </div>
                 </div>
-                <button className="BtnPersonalInfo" type="button">Guardar</button>
+               <Link to="/MedicalRecord">
+                    <button className="BtnPersonalInfo" type="button">Guardar</button>
+                </Link>
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './CrisisRecord.scss';
 import Header from '../Header'
+import { Link } from 'react-router-dom';
 
 const CrisisRecord = () => (
     <div className = 'MainContainer'>
@@ -29,7 +30,9 @@ const CrisisRecord = () => (
                         <input className="InputLogin" type="text" id="type"/>
                     </div>
                 </div>
-                <button className="BtnPersonalInfo" type="button">Guardar</button>
+                <Link to="/RegisterTables">
+                    <button className="BtnPersonalInfo" type="button">Guardar</button>
+                </Link>
                 </div>
         </div>
     </div>

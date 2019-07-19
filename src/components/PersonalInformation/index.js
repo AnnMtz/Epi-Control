@@ -37,9 +37,9 @@ class PersonalInformation extends Component{
                                     <label className="UserLabel" htmlFor="user">Edad</label>
                                     <input className="InputLogin" type="text" id="user"/>
                                 </div>
-                                <div className="Form-control-address">
+                                <div className="Form-control">
                                     <label className="UserLabel" htmlFor="user">Dirección</label>
-                                    <input className="InputAddress" type="text" id="user"/>
+                                    <input className="InputLogin" type="text" id="user"/>
                                 </div>
                                 <div className="Form-control">
                                     <label className="UserLabel" htmlFor="user">Teléfono</label>
@@ -52,12 +52,12 @@ class PersonalInformation extends Component{
                             </div>
                             <h3 className="EmergencyText">Contactos de emergencia</h3>
                             <h5 className="EmergencySubtext">Aquí puedes agregar tus contactos de emergencia, editar y/o eliminarlos como tu prefieras.</h5>
-                            <a href="#"><img src={Add} className="Addimage" alt="agregar"/></a>
-                            <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
+                            <Link to="/EmergencyContacts"><img src={Add} className="Addimage" alt="agregar"/></Link>
+                                <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
                         </div>
                     </div>
                 </div>
-    </div>
+        </div>
         )
     }
 } 

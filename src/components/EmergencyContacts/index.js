@@ -53,7 +53,9 @@ class EmergencyContacts extends Component{
                         </div>
                     </div>
     
+                    <Link to="/PersonalInformation">
                     <button className="BtnPersonalInfo" type="button" onClick={this.clickSave}>Guardar</button>
+                    </Link>
                 </div>
             </div>
         </div>
